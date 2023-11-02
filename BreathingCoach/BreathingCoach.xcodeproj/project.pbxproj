@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7048D852AEC573700249B37 /* BreathingCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D842AEC573700249B37 /* BreathingCoachApp.swift */; };
+		A7048D872AEC573700249B37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D862AEC573700249B37 /* ContentView.swift */; };
+		A7048D892AEC573800249B37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7048D882AEC573800249B37 /* Assets.xcassets */; };
+		A7048D8C2AEC573800249B37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7048D8B2AEC573800249B37 /* Preview Assets.xcassets */; };
+		A7048D962AEC573800249B37 /* BreathingCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D952AEC573800249B37 /* BreathingCoachTests.swift */; };
+		A7048DA02AEC573800249B37 /* BreathingCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D9F2AEC573800249B37 /* BreathingCoachUITests.swift */; };
+		A7048DA22AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048DA12AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift */; };
+		A7048DAF2AEC8F8C00249B37 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048DAE2AEC8F8C00249B37 /* Helper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7048D922AEC573800249B37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7048D792AEC573700249B37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7048D802AEC573700249B37;
+			remoteInfo = BreathingCoach;
+		};
+		A7048D9C2AEC573800249B37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7048D792AEC573700249B37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7048D802AEC573700249B37;
+			remoteInfo = BreathingCoach;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7048D812AEC573700249B37 /* BreathingCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathingCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7048D842AEC573700249B37 /* BreathingCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachApp.swift; sourceTree = "<group>"; };
+		A7048D862AEC573700249B37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7048D882AEC573800249B37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7048D8B2AEC573800249B37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7048D912AEC573800249B37 /* BreathingCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreathingCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7048D952AEC573800249B37 /* BreathingCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachTests.swift; sourceTree = "<group>"; };
+		A7048D9B2AEC573800249B37 /* BreathingCoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreathingCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7048D9F2AEC573800249B37 /* BreathingCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachUITests.swift; sourceTree = "<group>"; };
+		A7048DA12AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7048DAE2AEC8F8C00249B37 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7048D7E2AEC573700249B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7048D8E2AEC573800249B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7048D982AEC573800249B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7048D782AEC573700249B37 = {
+			isa = PBXGroup;
+			children = (
+				A7048D832AEC573700249B37 /* BreathingCoach */,
+				A7048D942AEC573800249B37 /* BreathingCoachTests */,
+				A7048D9E2AEC573800249B37 /* BreathingCoachUITests */,
+				A7048D822AEC573700249B37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7048D822AEC573700249B37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7048D812AEC573700249B37 /* BreathingCoach.app */,
+				A7048D912AEC573800249B37 /* BreathingCoachTests.xctest */,
+				A7048D9B2AEC573800249B37 /* BreathingCoachUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7048D832AEC573700249B37 /* BreathingCoach */ = {
+			isa = PBXGroup;
+			children = (
+				A7048D842AEC573700249B37 /* BreathingCoachApp.swift */,
+				A7048D862AEC573700249B37 /* ContentView.swift */,
+				A7048D882AEC573800249B37 /* Assets.xcassets */,
+				A7048D8A2AEC573800249B37 /* Preview Content */,
+				A7048DAE2AEC8F8C00249B37 /* Helper.swift */,
+			);
+			path = BreathingCoach;
+			sourceTree = "<group>";
+		};
+		A7048D8A2AEC573800249B37 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7048D8B2AEC573800249B37 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7048D942AEC573800249B37 /* BreathingCoachTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7048D952AEC573800249B37 /* BreathingCoachTests.swift */,
+			);
+			path = BreathingCoachTests;
+			sourceTree = "<group>";
+		};
+		A7048D9E2AEC573800249B37 /* BreathingCoachUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7048D9F2AEC573800249B37 /* BreathingCoachUITests.swift */,
+				A7048DA12AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift */,
+			);
+			path = BreathingCoachUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7048D802AEC573700249B37 /* BreathingCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7048DA52AEC573800249B37 /* Build configuration list for PBXNativeTarget "BreathingCoach" */;
+			buildPhases = (
+				A7048D7D2AEC573700249B37 /* Sources */,
+				A7048D7E2AEC573700249B37 /* Frameworks */,
+				A7048D7F2AEC573700249B37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreathingCoach;
+			productName = BreathingCoach;
+			productReference = A7048D812AEC573700249B37 /* BreathingCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7048D902AEC573800249B37 /* BreathingCoachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7048DA82AEC573800249B37 /* Build configuration list for PBXNativeTarget "BreathingCoachTests" */;
+			buildPhases = (
+				A7048D8D2AEC573800249B37 /* Sources */,
+				A7048D8E2AEC573800249B37 /* Frameworks */,
+				A7048D8F2AEC573800249B37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7048D932AEC573800249B37 /* PBXTargetDependency */,
+			);
+			name = BreathingCoachTests;
+			productName = BreathingCoachTests;
+			productReference = A7048D912AEC573800249B37 /* BreathingCoachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7048D9A2AEC573800249B37 /* BreathingCoachUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7048DAB2AEC573800249B37 /* Build configuration list for PBXNativeTarget "BreathingCoachUITests" */;
+			buildPhases = (
+				A7048D972AEC573800249B37 /* Sources */,
+				A7048D982AEC573800249B37 /* Frameworks */,
+				A7048D992AEC573800249B37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7048D9D2AEC573800249B37 /* PBXTargetDependency */,
+			);
+			name = BreathingCoachUITests;
+			productName = BreathingCoachUITests;
+			productReference = A7048D9B2AEC573800249B37 /* BreathingCoachUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7048D792AEC573700249B37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A7048D802AEC573700249B37 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					A7048D902AEC573800249B37 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A7048D802AEC573700249B37;
+					};
+					A7048D9A2AEC573800249B37 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A7048D802AEC573700249B37;
+					};
+				};
+			};
+			buildConfigurationList = A7048D7C2AEC573700249B37 /* Build configuration list for PBXProject "BreathingCoach" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7048D782AEC573700249B37;
+			productRefGroup = A7048D822AEC573700249B37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7048D802AEC573700249B37 /* BreathingCoach */,
+				A7048D902AEC573800249B37 /* BreathingCoachTests */,
+				A7048D9A2AEC573800249B37 /* BreathingCoachUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7048D7F2AEC573700249B37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7048D8C2AEC573800249B37 /* Preview Assets.xcassets in Resources */,
+				A7048D892AEC573800249B37 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7048D8F2AEC573800249B37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7048D992AEC573800249B37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7048D7D2AEC573700249B37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7048D872AEC573700249B37 /* ContentView.swift in Sources */,
+				A7048D852AEC573700249B37 /* BreathingCoachApp.swift in Sources */,
+				A7048DAF2AEC8F8C00249B37 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7048D8D2AEC573800249B37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7048D962AEC573800249B37 /* BreathingCoachTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7048D972AEC573800249B37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7048DA22AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift in Sources */,
+				A7048DA02AEC573800249B37 /* BreathingCoachUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7048D932AEC573800249B37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7048D802AEC573700249B37 /* BreathingCoach */;
+			targetProxy = A7048D922AEC573800249B37 /* PBXContainerItemProxy */;
+		};
+		A7048D9D2AEC573800249B37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7048D802AEC573700249B37 /* BreathingCoach */;
+			targetProxy = A7048D9C2AEC573800249B37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A7048DA32AEC573800249B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7048DA42AEC573800249B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7048DA62AEC573800249B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BreathingCoach/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m202a.BreathingCoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7048DA72AEC573800249B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BreathingCoach/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m202a.BreathingCoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7048DA92AEC573800249B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m202a.BreathingCoachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreathingCoach.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BreathingCoach";
+			};
+			name = Debug;
+		};
+		A7048DAA2AEC573800249B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m202a.BreathingCoachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreathingCoach.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BreathingCoach";
+			};
+			name = Release;
+		};
+		A7048DAC2AEC573800249B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m202a.BreathingCoachUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BreathingCoach;
+			};
+			name = Debug;
+		};
+		A7048DAD2AEC573800249B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m202a.BreathingCoachUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BreathingCoach;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7048D7C2AEC573700249B37 /* Build configuration list for PBXProject "BreathingCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7048DA32AEC573800249B37 /* Debug */,
+				A7048DA42AEC573800249B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7048DA52AEC573800249B37 /* Build configuration list for PBXNativeTarget "BreathingCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7048DA62AEC573800249B37 /* Debug */,
+				A7048DA72AEC573800249B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7048DA82AEC573800249B37 /* Build configuration list for PBXNativeTarget "BreathingCoachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7048DA92AEC573800249B37 /* Debug */,
+				A7048DAA2AEC573800249B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7048DAB2AEC573800249B37 /* Build configuration list for PBXNativeTarget "BreathingCoachUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7048DAC2AEC573800249B37 /* Debug */,
+				A7048DAD2AEC573800249B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7048D792AEC573700249B37 /* Project object */;
+}
