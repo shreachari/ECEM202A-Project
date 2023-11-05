@@ -23,6 +23,7 @@ struct ContentView: View {
             
             Button("Connect to Pi!") {
                 ContentViewHelper.connectAndCollectSensorData(text: $text)
+                ContentViewHelper.appendSensorData(text: $text)
             }
             
             TextEditor(text: $text)
