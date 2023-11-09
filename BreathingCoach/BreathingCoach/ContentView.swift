@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var text = "Sensor data goes here ..."
+    
     var body: some View {
+        
         VStack(alignment: .center) {
             Text("Breathing Coach")
                 .font(.title)
@@ -18,10 +22,12 @@ struct ContentView: View {
                 .lineLimit(1)
             
             Button("Connect to Pi!") {
-                helper1()
+                ContentViewHelper.connectAndCollectSensorData(text: $text)
+                ContentViewHelper.appendSensorData(text: $text)
             }
             
-            TextEditor(text: .constant("Sensor data goes here ..."))
+            TextEditor(text: $text)
+                        .frame(minWidth: 200, maxWidth: .infinity, minHeight: 100, maxHeight: .infinity)
             
             Spacer()
         }
