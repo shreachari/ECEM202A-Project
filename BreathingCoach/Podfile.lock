@@ -1,16 +1,16 @@
 PODS:
-  - Starscream (4.0.6)
+  - SwiftyZeroMQ (1.0.25)
 
 DEPENDENCIES:
-  - Starscream (~> 4.0.6)
+  - SwiftyZeroMQ (~> 1.0)
 
 SPEC REPOS:
-  trunk:
-    - Starscream
+  https://github.com/CocoaPods/Specs.git:
+    - SwiftyZeroMQ
 
 SPEC CHECKSUMS:
-  Starscream: fb2c4510bebf908c62bd383bcf05e673720e91fd
+  SwiftyZeroMQ: defa66cfbebad5835dd056b4114413670bb061f9
 
-PODFILE CHECKSUM: 6673ef6c624c90e4db4d34f7134b5faa9b71bcee
+PODFILE CHECKSUM: c4052170920ec0bdd82a6f66e57d57a3ae8ecf1f
 
 COCOAPODS: 1.14.2

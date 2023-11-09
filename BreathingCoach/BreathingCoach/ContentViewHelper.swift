@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import Starscream
 
 class ContentViewHelper {
     // You can define functions and properties related to ContentView here
