@@ -137,4 +137,17 @@ Our project will feature real time data collected from the NESL lab's UWB sensor
 ## 10. References
 
 List references correspondign to citations in your text above. For papers please include full citation and URL. For datasets and software include name and URL.
-**NEED TO ADD**
+**NEED TO ADD CITATION**
+
+Papers
+* [MindfulWatch](https://dl.acm.org/doi/10.1145/3130922#:~:text=Operating%20solely%20on%20a%20smartwatch,%2Fs%20induced%20by%20respiration.)
+* [BreathCoach](https://dl.acm.org/doi/10.1145/3267305.3267582)
+* [Attention Regulation Framework](https://psycnet.apa.org/record/2020-09848-004)
+* [BreathIE](https://ieeexplore.ieee.org/document/10096084)
+* [RunBuddy](https://dl.acm.org/doi/10.1145/2750858.2804293)
+
+Software
+* [C++](https://cplusplus.com/)
+* [ZeroMq](https://zeromq.org/)
+* [Swift](https://developer.apple.com/swift/)
+* [Matlab](https://www.mathworks.com/academia/tah-portal/ucla-31454052.html)
