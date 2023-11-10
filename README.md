@@ -1,7 +1,7 @@
 # Breathing Coach
 
 
-##Overview
+## Overview
 
 This project aims to create a Breathing Coach app which guides a user through a breathing exercise and provides the user's breathing pattern and feedback in real time. 
 
@@ -10,12 +10,12 @@ To gather breathing data, we use a UWB sensor, which is attached to a Raspberry 
 [Project Website](docs/index.md)
 
 
-##Description
+## Description
 
 BreathingCoach folder has code for the swift iOS mobile app the user will use. UWHear_breath folder has the matlab code used to analyze and visualize information collected from sensor and Raspberry Pi. X4Driver_RaspberryPi folder has the code that will run on Raspberry Pi to collect data from sensor and transmit to mobile device. x4_frame_time.xlsx is an interactive spreadsheet for adjusting parameters related to the Raspberry Pi retrieving information from the sensor. 
 
 
-##Setup Details
+## Setup Details
 
 Place the sensor at a short distance aligned to your chest. Run the app in BreathingCoach folder.
 
