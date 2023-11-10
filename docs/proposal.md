@@ -2,7 +2,7 @@
 
 ## 1. Motivation & Objective
 
-We are building an iOS app that guides a user through a breathing exercise and provides real time feedback regarding the user's breathing pattern. We use an UWB radar to collect breathing data without physically touching the user.
+We are building an iOS app that guides a user through a breathing exercise and provides real time feedback regarding the user's breathing pattern. We use a UWB radar to collect breathing data without physically touching the user.
 
 ## 2. State of the Art & Its Limitations
 
@@ -12,21 +12,19 @@ The limitations of these approaches are the reliance on wearable devices that ca
 
 ## 3. Novelty & Rationale
 
-What is new in your approach and why do you think it will be successful?
-
 Our approach uses an UWB sensor to measure breathing rate without physically touching the user. This allows users to breathe and meditate naturally without interference and distraction. Combining this benefit with real time feedback will allow users' phones to become virtual breathing coaches. 
 
 We believe in this project as our team has experience coding mobile apps and is passionate about working on projects that provide health benefits. Additionally, this UWB sensor has been provided by Ziqi Wang.
 
 ## 4. Potential Impact
 
-In the short term, this project will prove that it is possible to measure breathing and heart rate using an UWB sensor and provide real time feedback. After thorough development and experimentation, our app will allow mediation and yoga coaching will become more accessible as users will only need a sensor and phone to receive real time breathing feedback.
+In the short term, this project will prove that it is possible to measure breathing and heart rate using a UWB sensor and provide real time feedback. After thorough development and experimentation, our app will allow mediation and yoga coaching to become more accessible as users will only need a sensor and phone to receive real time breathing feedback.
 
 ## 5. Challenges
 
 One challenge is the networking between the sensor (raspberry pi) and iOS app. There are several possible methods of networking: Bluetooth, Web Sockets, Message Queues. It will be important to pick the optimal networking framework to assure data is sent continuously with little to no packet loss. Additionally, this data needs to be sent with minimal latency in order for the user to receive real time feedback. This will be challenging as well.
 
-Another challenge will be to collect the optimal signal and perform the appropriate signal processing. This requires real time data analysis, which again is a challenging task given our latency constraints. Given our team has a computer science background, we will also need to gain an understanding of signal processing.
+Another challenge will be to collect the optimal signal and perform the appropriate signal processing. This requires real time data analysis, which again is a challenging task given our strict latency constraints. Given our team has a computer science background, we will also need to gain an understanding of signal processing.
 
 ## 6. Requirements for Success
 
@@ -50,11 +48,11 @@ Our metrics of success are as follows:
 1. UWB sensor data is sent from the raspberry pi to iOS app and can be displayed on the app as a waveform
 2. The iOS app can take the user through a breathing exercise.
 3. We can display the expected and actual breathing rate on the UI during the breathing exercise.
-4. We can display the user's heart rate on the UI during the breathing exercise.
 
 Some stretch goals are:
 1. Provide feedback to the user in real time.
 2. Provide support for multiple breathing patterns.
+3. We can display the user's heart rate on the UI during the breathing exercise.
 
 ## 8. Execution Plan
 
@@ -83,15 +81,16 @@ We have broken our project up into sub tasks by week. Each week, we meet to divi
     * Pivot to ZeroMQ (more lightweight)
 * Set up ZeroMQ on raspberry pi
 * Set up ZeroMQ on iOS app
-* Work on midterm presentation
 
-**Week 7:** 
-* Midterm presentation in class
+**Week 7:**
+* Get simple ZeroMQ communication working on personal laptops and replicate on raspberry pi
 * Measure expected breathing pattern
     * Data Processing: take multiple samples, plot all together, take best fit graph as expected value
 * Create a basic breathing exercise
+* Work on midterm presentation
 
 **Week 8:** 
+* Midterm presentation in class
 * App dev: Real time data display
     * Display both user’s and expected waveform on the screen
     * Compute delay
@@ -137,7 +136,7 @@ Our project will feature real time data collected from the NESL lab's UWB sensor
 ### 9.c. Software
 
 * C/C++/Linux for Raspberry Pi
-* ZeroMQ
+* ZeroMQ for networking between Raspberry Pi and mobile device
 * Swift/Xcode for iOS development
 * Matlab if needed for data processing
 
