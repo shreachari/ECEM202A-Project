@@ -18,7 +18,8 @@ struct ContentView2: View {
     "Setup Instructions:\n" +
     "Sit straight and place the sensor device aligned to your chest at a 1 meter distance."
     
-    @State private var text = ""
+    @State private var sensorDataText = "Sensor data goes here...\n\n"
+    let zmqSubscriber = ZeroMQSubscriber(text: .constant(""))
     
     var body: some View {
         ZStack{
@@ -40,25 +41,28 @@ struct ContentView2: View {
                 Button(action: {
                             // Action to be performed when the button is tapped
                             // You can add your code here
-                            ContentViewHelper.connectAndCollectSensorData(text: $text)
-                            ContentViewHelper.appendSensorData(text: $text)
-                        }) {
-                            Text("Get Started!!")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color.black)
-                                .cornerRadius(10)
-                        }
+                    zmqSubscriber.connectAndCollectSensorData()
+                    }) {
+                        Text("Get Started!!")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.black)
+                            .cornerRadius(10)
+                    }
                 
                 
-                TextEditor(text: $text)
+                TextEditor(text: $sensorDataText)
                             .font(.headline)
                             .foregroundColor(.black)
                             .padding()
                             .disabled(true) //non-editable
                 
                 Spacer()
+            }
+            .onAppear {
+                // Set the binding for text in the subscriber
+                zmqSubscriber.textBinding = $sensorDataText
             }
             .padding()
         }

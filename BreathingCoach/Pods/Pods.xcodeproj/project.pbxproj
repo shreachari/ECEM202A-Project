@@ -71,7 +71,7 @@
 		3EAAB9306FE21D7CECFD6EDF6CD7FE18 /* SwiftyZeroMQ-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyZeroMQ-prefix.pch"; sourceTree = "<group>"; };
 		430FF0FCCF9BE6EF1C0B95C99729F4FA /* zmq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zmq.h; path = Sources/zmq.h; sourceTree = "<group>"; };
 		4922756DE5587D3A63B41D1D39CB9FAF /* Pods-BreathingCoach-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoach-acknowledgements.plist"; sourceTree = "<group>"; };
-		5792642167616C2B93507E7B5E08F674 /* Pods_BreathingCoachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathingCoachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5792642167616C2B93507E7B5E08F674 /* Pods-BreathingCoachTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BreathingCoachTests"; path = Pods_BreathingCoachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A05D41AC9CCE69AD0201BCB41DA41A6 /* Pods-BreathingCoach-BreathingCoachUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoach-BreathingCoachUITests-Info.plist"; sourceTree = "<group>"; };
 		6B311ADF0B9BC1194C51DE392FD690ED /* Pods-BreathingCoach-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoach-Info.plist"; sourceTree = "<group>"; };
 		70B66B3C260919DED39C1109DCED80B2 /* SwiftyZeroMQ.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyZeroMQ.modulemap; sourceTree = "<group>"; };
@@ -83,9 +83,9 @@
 		7FD16174B6C2F32067738C98D8D9780B /* ZeroMQError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroMQError.swift; path = Sources/ZeroMQError.swift; sourceTree = "<group>"; };
 		8334FFE4F6C25772B45576BA8289932E /* Poller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poller.swift; path = Sources/Poller.swift; sourceTree = "<group>"; };
 		8A4B1CB573AEBB0C35A3968F1E1FF9C1 /* Pods-BreathingCoach-BreathingCoachUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreathingCoach-BreathingCoachUITests-dummy.m"; sourceTree = "<group>"; };
-		8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyZeroMQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyZeroMQ; path = SwiftyZeroMQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		972F4C0A5F2FAD2F170A37533CE1F3C8 /* Pods-BreathingCoach-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreathingCoach-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EFF6CE4DCBA66F21C8BF3E650B9D4BB /* SwiftyZeroMQ-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyZeroMQ-Info.plist"; sourceTree = "<group>"; };
 		A4B1F203BC2695B3E11AC0F40E3E07F1 /* Pods-BreathingCoach-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreathingCoach-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A7C4ABDA0ADEAC1BC648118D32B6339D /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Sources/Context.swift; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 		CBB11531964953D67BC64DED0F081604 /* Pods-BreathingCoachTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoachTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CEDB24D9B1D2C94B7CFAF4658D9015C4 /* SwiftyZeroMQ-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyZeroMQ-umbrella.h"; sourceTree = "<group>"; };
 		D25E4463C0195AF12B0523710576CC2B /* Pods-BreathingCoach-BreathingCoachUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BreathingCoach-BreathingCoachUITests-frameworks.sh"; sourceTree = "<group>"; };
-		DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods_BreathingCoach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathingCoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods-BreathingCoach */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BreathingCoach"; path = Pods_BreathingCoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AB3B675E936C59EA7397539B62FCD5 /* Pods-BreathingCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathingCoach.debug.xcconfig"; sourceTree = "<group>"; };
-		E82BFB19B088CB37C59DD87EDC271FB3 /* Pods_BreathingCoach_BreathingCoachUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathingCoach_BreathingCoachUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82BFB19B088CB37C59DD87EDC271FB3 /* Pods-BreathingCoach-BreathingCoachUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BreathingCoach-BreathingCoachUITests"; path = Pods_BreathingCoach_BreathingCoachUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A8100E8A1AF5E754376DE23622DFA8 /* Pods-BreathingCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathingCoachTests.release.xcconfig"; sourceTree = "<group>"; };
 		EAED6B5FEF0807BC1598712ED8F16244 /* Pods-BreathingCoachTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoachTests-Info.plist"; sourceTree = "<group>"; };
 		EF26E2279AFBDB998EBE55D56148A3F1 /* Pods-BreathingCoachTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreathingCoachTests-dummy.m"; sourceTree = "<group>"; };
@@ -145,10 +145,10 @@
 		1DCC0FC955DB56CB46494DFE948AF704 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods_BreathingCoach.framework */,
-				E82BFB19B088CB37C59DD87EDC271FB3 /* Pods_BreathingCoach_BreathingCoachUITests.framework */,
-				5792642167616C2B93507E7B5E08F674 /* Pods_BreathingCoachTests.framework */,
-				8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ.framework */,
+				DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods-BreathingCoach */,
+				E82BFB19B088CB37C59DD87EDC271FB3 /* Pods-BreathingCoach-BreathingCoachUITests */,
+				5792642167616C2B93507E7B5E08F674 /* Pods-BreathingCoachTests */,
+				8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +178,7 @@
 				FF07442319E990D999E462ABB2F09FDE /* Frameworks */,
 				8EB24A1F6A3735D304F56BF2A8734550 /* Support Files */,
 			);
+			name = SwiftyZeroMQ;
 			path = SwiftyZeroMQ;
 			sourceTree = "<group>";
 		};
@@ -345,7 +346,7 @@
 			);
 			name = "Pods-BreathingCoach";
 			productName = Pods_BreathingCoach;
-			productReference = DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods_BreathingCoach.framework */;
+			productReference = DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods-BreathingCoach */;
 			productType = "com.apple.product-type.framework";
 		};
 		7998B334EAFB81766EEFCEF4F146AAB4 /* Pods-BreathingCoachTests */ = {
@@ -364,7 +365,7 @@
 			);
 			name = "Pods-BreathingCoachTests";
 			productName = Pods_BreathingCoachTests;
-			productReference = 5792642167616C2B93507E7B5E08F674 /* Pods_BreathingCoachTests.framework */;
+			productReference = 5792642167616C2B93507E7B5E08F674 /* Pods-BreathingCoachTests */;
 			productType = "com.apple.product-type.framework";
 		};
 		83D053A413717B40027DC4035E65DF6B /* Pods-BreathingCoach-BreathingCoachUITests */ = {
@@ -383,7 +384,7 @@
 			);
 			name = "Pods-BreathingCoach-BreathingCoachUITests";
 			productName = Pods_BreathingCoach_BreathingCoachUITests;
-			productReference = E82BFB19B088CB37C59DD87EDC271FB3 /* Pods_BreathingCoach_BreathingCoachUITests.framework */;
+			productReference = E82BFB19B088CB37C59DD87EDC271FB3 /* Pods-BreathingCoach-BreathingCoachUITests */;
 			productType = "com.apple.product-type.framework";
 		};
 		A6AD2F873FE44AD77AB8EE9F86363AF3 /* SwiftyZeroMQ */ = {
@@ -401,7 +402,7 @@
 			);
 			name = SwiftyZeroMQ;
 			productName = SwiftyZeroMQ;
-			productReference = 8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ.framework */;
+			productReference = 8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -529,155 +530,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1FFCF83924743F910B90141E7F259458 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78AD0E2971C4096053219D5739FCBC9C /* Pods-BreathingCoach-BreathingCoachUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2285E32B8CE01B0E59452A287B646241 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8A8100E8A1AF5E754376DE23622DFA8 /* Pods-BreathingCoachTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		27F3480D0FD104B903E836F72A369EEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 189109F2ABBCCBB45DB380D73A365C95 /* Pods-BreathingCoach.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoach/Pods-BreathingCoach-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoach/Pods-BreathingCoach.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5BB7813CCB5A7F680C417D760CA98518 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA3C5661B6D2BC2253624570336F463A /* SwiftyZeroMQ.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyZeroMQ;
-				PRODUCT_NAME = SwiftyZeroMQ;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		78B2D19E3705AF1A0135C82499BB8EB6 /* Debug */ = {
+		013C2E3055B2ADA2B5DCA8579338F4A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7AB3B675E936C59EA7397539B62FCD5 /* Pods-BreathingCoach.debug.xcconfig */;
 			buildSettings = {
@@ -714,72 +567,12 @@
 			};
 			name = Debug;
 		};
-		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+		2EAA04394A23B74D66C4120AEF5E4DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D8F5CA02722B1FF8B18B07A11C19BCF /* Pods-BreathingCoachTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		924C0E421B22B07FFAB2E095ADFEE45A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDCE568168B96894A6653A9B3A6583CD /* SwiftyZeroMQ.debug.xcconfig */;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -788,8 +581,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -797,20 +589,22 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyZeroMQ;
-				PRODUCT_NAME = SwiftyZeroMQ;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9405F0CB70E6C717FB148D609DDB528A /* Release */ = {
+		4D92434BA65CAD34F4D974AB0FA71236 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23F4F3310659DF729E5A588BBD6C3B9F /* Pods-BreathingCoach-BreathingCoachUITests.release.xcconfig */;
 			buildSettings = {
@@ -848,12 +642,10 @@
 			};
 			name = Release;
 		};
-		A80B69E2DD8EEE96BC6CBAACA9AAFEF4 /* Debug */ = {
+		5BB7813CCB5A7F680C417D760CA98518 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D8F5CA02722B1FF8B18B07A11C19BCF /* Pods-BreathingCoachTests.debug.xcconfig */;
+			baseConfigurationReference = CA3C5661B6D2BC2253624570336F463A /* SwiftyZeroMQ.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -862,30 +654,30 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyZeroMQ;
+				PRODUCT_NAME = SwiftyZeroMQ;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -938,7 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -951,14 +743,223 @@
 			};
 			name = Debug;
 		};
+		7A7F666192D25FCBD1259CAE18776C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78AD0E2971C4096053219D5739FCBC9C /* Pods-BreathingCoach-BreathingCoachUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		924C0E421B22B07FFAB2E095ADFEE45A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDCE568168B96894A6653A9B3A6583CD /* SwiftyZeroMQ.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyZeroMQ;
+				PRODUCT_NAME = SwiftyZeroMQ;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D96A2D7CB3F40BEEE6AC8B05329E1A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 189109F2ABBCCBB45DB380D73A365C95 /* Pods-BreathingCoach.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoach/Pods-BreathingCoach-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoach/Pods-BreathingCoach.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F809685791582FEA1C51AB20228ABBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A8100E8A1AF5E754376DE23622DFA8 /* Pods-BreathingCoachTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		22DE435A0B92521B2AE135F8701D80DB /* Build configuration list for PBXNativeTarget "Pods-BreathingCoachTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A80B69E2DD8EEE96BC6CBAACA9AAFEF4 /* Debug */,
-				2285E32B8CE01B0E59452A287B646241 /* Release */,
+				2EAA04394A23B74D66C4120AEF5E4DE6 /* Debug */,
+				F809685791582FEA1C51AB20228ABBA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -975,8 +976,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
-				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -984,8 +985,8 @@
 		EAF09516738FB55D981D287382F0520E /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				78B2D19E3705AF1A0135C82499BB8EB6 /* Debug */,
-				27F3480D0FD104B903E836F72A369EEF /* Release */,
+				013C2E3055B2ADA2B5DCA8579338F4A6 /* Debug */,
+				D96A2D7CB3F40BEEE6AC8B05329E1A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -993,8 +994,8 @@
 		FD67C129168817808838B456F0CFEA35 /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach-BreathingCoachUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FFCF83924743F910B90141E7F259458 /* Debug */,
-				9405F0CB70E6C717FB148D609DDB528A /* Release */,
+				7A7F666192D25FCBD1259CAE18776C1B /* Debug */,
+				4D92434BA65CAD34F4D974AB0FA71236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
