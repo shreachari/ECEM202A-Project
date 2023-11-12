@@ -25,19 +25,23 @@ struct ContentView: View {
                         let subscriber = try context.socket(.subscribe)
 
                         // Connect to the Raspberry Pi's publisher
-                        try subscriber.connect("tcp://192.168.8.219:5555")  // Replace with the Raspberry Pi's IP address
+//                        try subscriber.connect("tcp://192.168.8.219:5555")
+                        try subscriber.connect("tcp://127.0.0.1:5555")
 
+                        usleep(1000)
+                        
                         // Subscribe to all messages
-//                        try subscriber.setSubscribe(nil)
+                        try subscriber.setSubscribe(nil)
                         
                         
                         usleep(250)
                         
 
                         while true {
+                            print("true")
                             // Receive and process data
-                            if let data = try subscriber.recv() {
-                                print("HELLO")
+                            if let data = try subscriber.recv(options: .dontWait) {
+                                print("Recieved data.")
                                 DispatchQueue.main.async {
                                     // Update UI with received data
                                     print(data)
@@ -46,6 +50,7 @@ struct ContentView: View {
                             }
                         }
                     } catch {
+                        print("error")
                         print("Error: \(error)")
                     }
                 }
