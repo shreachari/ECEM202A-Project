@@ -9,29 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var text = "Sensor data goes here ..."
-    
     var body: some View {
-        
-        VStack(alignment: .center) {
-            Text("Breathing Coach")
-                .font(.title)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.orange)
-                .multilineTextAlignment(.leading)
-                .lineLimit(1)
+        NavigationView{
             
-            Button("Connect to Pi!") {
-                ContentViewHelper.connectAndCollectSensorData(text: $text)
-                ContentViewHelper.appendSensorData(text: $text)
+            ZStack{
+                Color.indigo.edgesIgnoringSafeArea(.all)
+                
+                VStack(alignment: .center) {
+                    Text("Breathing Coach")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.orange)
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(1)
+                    //Image
+                    Image("Meditation")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 450)
+                    
+                    
+                    NavigationLink(destination: ContentView2()) {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .frame(height: 44) // Adjust the height as needed
+                                .foregroundColor(Color.yellow)
+                            
+                            Text("GET STARTED!")
+                                .foregroundColor(Color.black)
+                                .font(.headline)
+                                .fontWeight(.heavy)
+                                .bold()
+                        }
+                    }
+                    
+                    Spacer()
+                }
+                .padding()
             }
-            
-            TextEditor(text: $text)
-                        .frame(minWidth: 200, maxWidth: .infinity, minHeight: 100, maxHeight: .infinity)
-            
-            Spacer()
         }
-        .padding()
     }
 }
 
