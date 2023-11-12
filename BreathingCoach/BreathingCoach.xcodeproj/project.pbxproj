@@ -17,6 +17,7 @@
 		A7048DA02AEC573800249B37 /* BreathingCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D9F2AEC573800249B37 /* BreathingCoachUITests.swift */; };
 		A7048DA22AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048DA12AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift */; };
 		A7048DAF2AEC8F8C00249B37 /* ContentViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048DAE2AEC8F8C00249B37 /* ContentViewHelper.swift */; };
+		A78C418C2B004573002FE5F8 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C418B2B004573002FE5F8 /* ContentView2.swift */; };
 		BA087F8AD52CED71BA658744 /* Pods_BreathingCoach_BreathingCoachUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4907471F8DE2FDC2DA88CE6 /* Pods_BreathingCoach_BreathingCoachUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		A7048D9F2AEC573800249B37 /* BreathingCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachUITests.swift; sourceTree = "<group>"; };
 		A7048DA12AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A7048DAE2AEC8F8C00249B37 /* ContentViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHelper.swift; sourceTree = "<group>"; };
+		A78C418B2B004573002FE5F8 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		B1B73F32CFFA8C467008CF03 /* Pods-BreathingCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathingCoachTests.release.xcconfig"; path = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.release.xcconfig"; sourceTree = "<group>"; };
 		B4907471F8DE2FDC2DA88CE6 /* Pods_BreathingCoach_BreathingCoachUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathingCoach_BreathingCoachUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9ECD2DDB8020BF5B99D25D9 /* Pods-BreathingCoachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathingCoachTests.debug.xcconfig"; path = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				A7048D882AEC573800249B37 /* Assets.xcassets */,
 				A7048D8A2AEC573800249B37 /* Preview Content */,
 				A7048DAE2AEC8F8C00249B37 /* ContentViewHelper.swift */,
+				A78C418B2B004573002FE5F8 /* ContentView2.swift */,
 			);
 			path = BreathingCoach;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7048D872AEC573700249B37 /* ContentView.swift in Sources */,
+				A78C418C2B004573002FE5F8 /* ContentView2.swift in Sources */,
 				A7048D852AEC573700249B37 /* BreathingCoachApp.swift in Sources */,
 				A7048DAF2AEC8F8C00249B37 /* ContentViewHelper.swift in Sources */,
 			);
