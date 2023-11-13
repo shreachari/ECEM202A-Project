@@ -7,122 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		003816BFA05CF66896A4D80ADF89248C /* Pods-BreathingCoach-BreathingCoachUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 224B4B1B5098D83AD5E10E0F41977D1A /* Pods-BreathingCoach-BreathingCoachUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00C9C2E54995B3BEA1C999016833A58B /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECFB158E08A6502A38761C96CB68975B /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		046AC7AA224C78A31C0A8FACB11D2D28 /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D70531198624C7D8B14FF91C62FF6B /* StringHTTPHandler.swift */; };
 		08E6CC95B554674FB90818714F4734E6 /* Pods-BreathingCoachTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF26E2279AFBDB998EBE55D56148A3F1 /* Pods-BreathingCoachTests-dummy.m */; };
-		301828F76E1B6EE449C418DD06589338 /* Pods-BreathingCoach-BreathingCoachUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B1CB573AEBB0C35A3968F1E1FF9C1 /* Pods-BreathingCoach-BreathingCoachUITests-dummy.m */; };
-		33C71989B6C635864EC5E4862AFAAE8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3A655D6817E99F062266BB601B0EEEDF /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B65F09370A4D9877255EC1C47060A2 /* Starscream-dummy.m */; };
-		3F3E9C6FF4BCB6F4FF18D9121CC3E42F /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62AC07A9271D8996F97CC35856BA647 /* WebSocketServer.swift */; };
-		4017A49666028E0F68157D6A7B5A22C1 /* Pods-BreathingCoach-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 972F4C0A5F2FAD2F170A37533CE1F3C8 /* Pods-BreathingCoach-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B4E17AF004413ED49D35C9772695089 /* SwiftyZeroMQ-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEDB24D9B1D2C94B7CFAF4658D9015C4 /* SwiftyZeroMQ-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2896BC8D178FBD8ACC7540F62864E301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3779377ADA6831B5C395FA3707999F21 /* Pods-BreathingCoach-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 972F4C0A5F2FAD2F170A37533CE1F3C8 /* Pods-BreathingCoach-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C58522CB799E182DD7B9ADB84CDE75F /* ZeroMQError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD16174B6C2F32067738C98D8D9780B /* ZeroMQError.swift */; };
 		45FA3AB7483706B88F5EC9C8705F43D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		489EF4A7D4992C47CF590AEF9AA418FC /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7E34251E9353A38AC748BB94EDC575 /* FoundationTransport.swift */; };
-		4A3B1BE129FDA231AC217E1C6DB2B8C8 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8BC22AA74FEDA9CF44852D28F68A4 /* Transport.swift */; };
-		4AB6FCF35B998F60ED9EB100542EEA31 /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF39A541BA78B8472A0F9D4E3504B90 /* FoundationHTTPHandler.swift */; };
-		5006DD4B60A05AF56EA0706A680BABF6 /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F95157FC4CC8593A1B1E4607562122 /* FoundationHTTPServerHandler.swift */; };
-		5281197FE8CC6E6954315F11B8F553D0 /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5831A57C2E79638C447411ED69EB6C42 /* FoundationSecurity.swift */; };
-		59CAD8FDBFF0BA6BBF55BBADA304721F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		631654C419F62FE0270E1DF79CCF6F8B /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175E21DED4337E7BBD3EF7424F315F6 /* Data+Extensions.swift */; };
-		69A591F2BDE4941B391C102F4C26B115 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC292255BA6A323D7D1C01215CC6591 /* Security.swift */; };
-		6C0DACBE00A34619DEDB9A65CB959BA5 /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CCA8582A00BBFBC2E9AFFC1C1D53A9 /* TCPTransport.swift */; };
-		7032298141DC60E66CFD38798C46A321 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7DDEA2F73F2A02D88D5164B46BA2C7E8 /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED0E33A6DD024AC0E71FEF3EA74D7C /* HTTPHandler.swift */; };
+		50A0013F5042F0A53E00156C50790D3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		50F192EE32C9D946672179032DD9ADF7 /* SwiftyZeroMQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFEE82E1377BF096415AEF9E62021D5 /* SwiftyZeroMQ.swift */; };
+		6AC0D2D06BEED6C992CF0BCB6700463A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		89ED37E2F8EBC05E9BA1E2A1D5977918 /* SocketSendRecvOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762A6E84A0BB6F31B3F36CBBFC6C054 /* SocketSendRecvOption.swift */; };
+		8A215260DA35A60B9DCBC3DEBC9A0870 /* zmq.h in Headers */ = {isa = PBXBuildFile; fileRef = 430FF0FCCF9BE6EF1C0B95C99729F4FA /* zmq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E25AED19FE4E6E0B281AA6A28DC63FE /* Pods-BreathingCoach-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5AADAA23680EB7C55E4C7DCA012108 /* Pods-BreathingCoach-dummy.m */; };
+		996CC1EA1E765BDF714936443DAD11F9 /* SwiftyZeroMQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF9D401B53C2100AE77C63C158BC7EB /* SwiftyZeroMQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D1C194F921BF43D02FFDF827FEA5175 /* Pods-BreathingCoachTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE62283DCD0EA43AFF049C13F0947B8 /* Pods-BreathingCoachTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B44349C69B2C0AF407B678B20DC9CB80 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2727BA14E02E7210DD6B547EA7D394 /* WebSocket.swift */; };
-		BB056B9351B1BE41C2703393F69623DD /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9AF7BDFE0F03CE129D72D85FCA460 /* WSEngine.swift */; };
-		C28A0006DD1C9AB062763C8FA2B3F93D /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ADCC3B462E7AE2D80872C7A66CA4A7 /* NativeEngine.swift */; };
-		CC235941F0CF9FA8C0FA3323A0D18203 /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1454E39E11FD28A611495E03B2015FD4 /* Framer.swift */; };
-		DF9BE4B3E95B007977780C9EFDA3EFBE /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD212064ED1CC47B2560F6E20526B3B /* Server.swift */; };
-		DFA2736CE4B16FD4D82450863EC58507 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EAFCD04DEECC2AC6B8727048A80617 /* Compression.swift */; };
-		EB5C3537AD21658D3EC873A4A4AFDE30 /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C291A02C054326B5C6022EACD814E4 /* FrameCollector.swift */; };
-		F1718AE84BAC9DC7A1EECBDCCAA18E44 /* Pods-BreathingCoach-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5AADAA23680EB7C55E4C7DCA012108 /* Pods-BreathingCoach-dummy.m */; };
-		FA2A3CCAE01CF0108D2FDB7C8108B988 /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1918C09D193EF7F62A7C2611F12AC44B /* WSCompression.swift */; };
-		FAFD54F649DC5D69DD05D517A0131968 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0925310BE76B051E1B51E7FBB37F35 /* Engine.swift */; };
+		AC9E48FA8B084416EFFE9B173DD4B9F2 /* Pods-BreathingCoach-BreathingCoachUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B1CB573AEBB0C35A3968F1E1FF9C1 /* Pods-BreathingCoach-BreathingCoachUITests-dummy.m */; };
+		D2901DF1DB9EE3925A988C943AFF90FD /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4ABDA0ADEAC1BC648118D32B6339D /* Context.swift */; };
+		D5A27C801DC8C4FAAFD6B75E29DB479B /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0F72B2EBDB0761E8DA6B2655EE004 /* Socket.swift */; };
+		DC8073CF9DB1413EE87E182B7B1EE507 /* Poller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334FFE4F6C25772B45576BA8289932E /* Poller.swift */; };
+		E6A7BA236139D2C2BFD538E658BA044A /* Pods-BreathingCoach-BreathingCoachUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 224B4B1B5098D83AD5E10E0F41977D1A /* Pods-BreathingCoach-BreathingCoachUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE435B6BF1E6760732C20909ACDD7F95 /* SwiftyZeroMQ-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD66154FB4C28009B7DCCFB0556DD17 /* SwiftyZeroMQ-dummy.m */; };
+		F3E4B93C237CB8A989F82ED8523EE2A6 /* SocketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B03BBB64771E815379E8BC86332BDE /* SocketType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		52F66066D7ECEE9499C3184FAF888323 /* PBXContainerItemProxy */ = {
+		6D23DBC092E057DF6EDB4D6430C58634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6AD2F873FE44AD77AB8EE9F86363AF3;
+			remoteInfo = SwiftyZeroMQ;
+		};
+		99C58BC10E72F46996041C73B22A0871 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4F493FA3EE85687E27251A78E0AED419;
 			remoteInfo = "Pods-BreathingCoach";
 		};
-		AB66B72A0E1B4EAF177B8C019C15C39E /* PBXContainerItemProxy */ = {
+		D2231FBEF34D075E14595F95486B4807 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
-			remoteInfo = Starscream;
-		};
-		B3075DB660CE223C70BD935654DC1422 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
-			remoteInfo = Starscream;
+			remoteGlobalIDString = A6AD2F873FE44AD77AB8EE9F86363AF3;
+			remoteInfo = SwiftyZeroMQ;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		010F5C43A348BC3C417C21FA354444E2 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
 		032223C30596DF8254FBFD9FE278764F /* Pods-BreathingCoach.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BreathingCoach.modulemap"; sourceTree = "<group>"; };
+		0762A6E84A0BB6F31B3F36CBBFC6C054 /* SocketSendRecvOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketSendRecvOption.swift; path = Sources/SocketSendRecvOption.swift; sourceTree = "<group>"; };
+		0AF9D401B53C2100AE77C63C158BC7EB /* SwiftyZeroMQ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyZeroMQ.h; path = Sources/SwiftyZeroMQ.h; sourceTree = "<group>"; };
 		0BACA8FBC2D5555304D2FFDD3A09DD5A /* Pods-BreathingCoach-BreathingCoachUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreathingCoach-BreathingCoachUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1454E39E11FD28A611495E03B2015FD4 /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
-		16D70531198624C7D8B14FF91C62FF6B /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
+		0C1227DED6CCA4A61247A2C949E89563 /* libzmq-ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libzmq-ios.a"; path = "Libraries/libzmq-ios.a"; sourceTree = "<group>"; };
 		16DFAFE1751CD1A9AD7A118E2A224307 /* Pods-BreathingCoach-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BreathingCoach-frameworks.sh"; sourceTree = "<group>"; };
 		189109F2ABBCCBB45DB380D73A365C95 /* Pods-BreathingCoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathingCoach.release.xcconfig"; sourceTree = "<group>"; };
-		1918C09D193EF7F62A7C2611F12AC44B /* WSCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Sources/Compression/WSCompression.swift; sourceTree = "<group>"; };
 		1BE62283DCD0EA43AFF049C13F0947B8 /* Pods-BreathingCoachTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreathingCoachTests-umbrella.h"; sourceTree = "<group>"; };
 		21ACE71EF0E1D25268E9FCFE28B26A8F /* Pods-BreathingCoach-BreathingCoachUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BreathingCoach-BreathingCoachUITests.modulemap"; sourceTree = "<group>"; };
-		21B65F09370A4D9877255EC1C47060A2 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
 		224B4B1B5098D83AD5E10E0F41977D1A /* Pods-BreathingCoach-BreathingCoachUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreathingCoach-BreathingCoachUITests-umbrella.h"; sourceTree = "<group>"; };
 		23F4F3310659DF729E5A588BBD6C3B9F /* Pods-BreathingCoach-BreathingCoachUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathingCoach-BreathingCoachUITests.release.xcconfig"; sourceTree = "<group>"; };
 		27E05ACA8B8226931A929F759BB0AB65 /* Pods-BreathingCoach-BreathingCoachUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoach-BreathingCoachUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2C1CF04602B9D61F89BCC51DEA7939B0 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
-		35ED0E33A6DD024AC0E71FEF3EA74D7C /* HTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHandler.swift; path = Sources/Framer/HTTPHandler.swift; sourceTree = "<group>"; };
-		37C291A02C054326B5C6022EACD814E4 /* FrameCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCollector.swift; path = Sources/Framer/FrameCollector.swift; sourceTree = "<group>"; };
-		3AF39A541BA78B8472A0F9D4E3504B90 /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
-		3D7E34251E9353A38AC748BB94EDC575 /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
 		3D8F5CA02722B1FF8B18B07A11C19BCF /* Pods-BreathingCoachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathingCoachTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3EAAB9306FE21D7CECFD6EDF6CD7FE18 /* SwiftyZeroMQ-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyZeroMQ-prefix.pch"; sourceTree = "<group>"; };
+		430FF0FCCF9BE6EF1C0B95C99729F4FA /* zmq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zmq.h; path = Sources/zmq.h; sourceTree = "<group>"; };
 		4922756DE5587D3A63B41D1D39CB9FAF /* Pods-BreathingCoach-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoach-acknowledgements.plist"; sourceTree = "<group>"; };
-		4A0925310BE76B051E1B51E7FBB37F35 /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Engine/Engine.swift; sourceTree = "<group>"; };
-		4D2727BA14E02E7210DD6B547EA7D394 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
-		4FC292255BA6A323D7D1C01215CC6591 /* Security.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Security.swift; path = Sources/Security/Security.swift; sourceTree = "<group>"; };
-		56ADCC3B462E7AE2D80872C7A66CA4A7 /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
-		56CCA8582A00BBFBC2E9AFFC1C1D53A9 /* TCPTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPTransport.swift; path = Sources/Transport/TCPTransport.swift; sourceTree = "<group>"; };
 		5792642167616C2B93507E7B5E08F674 /* Pods-BreathingCoachTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BreathingCoachTests"; path = Pods_BreathingCoachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5831A57C2E79638C447411ED69EB6C42 /* FoundationSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationSecurity.swift; path = Sources/Security/FoundationSecurity.swift; sourceTree = "<group>"; };
 		6A05D41AC9CCE69AD0201BCB41DA41A6 /* Pods-BreathingCoach-BreathingCoachUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoach-BreathingCoachUITests-Info.plist"; sourceTree = "<group>"; };
 		6B311ADF0B9BC1194C51DE392FD690ED /* Pods-BreathingCoach-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoach-Info.plist"; sourceTree = "<group>"; };
-		7175E21DED4337E7BBD3EF7424F315F6 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
+		70B66B3C260919DED39C1109DCED80B2 /* SwiftyZeroMQ.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyZeroMQ.modulemap; sourceTree = "<group>"; };
+		71C0F72B2EBDB0761E8DA6B2655EE004 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78AD0E2971C4096053219D5739FCBC9C /* Pods-BreathingCoach-BreathingCoachUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathingCoach-BreathingCoachUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DD66154FB4C28009B7DCCFB0556DD17 /* SwiftyZeroMQ-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyZeroMQ-dummy.m"; sourceTree = "<group>"; };
 		7F5AADAA23680EB7C55E4C7DCA012108 /* Pods-BreathingCoach-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreathingCoach-dummy.m"; sourceTree = "<group>"; };
-		81F95157FC4CC8593A1B1E4607562122 /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPServerHandler.swift; path = Sources/Framer/FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
-		85C44A9AB6F12498BFC8233B9D599206 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
-		891B2270823847ED23F2ECFC28F935EC /* Starscream */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD16174B6C2F32067738C98D8D9780B /* ZeroMQError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroMQError.swift; path = Sources/ZeroMQError.swift; sourceTree = "<group>"; };
+		8334FFE4F6C25772B45576BA8289932E /* Poller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poller.swift; path = Sources/Poller.swift; sourceTree = "<group>"; };
 		8A4B1CB573AEBB0C35A3968F1E1FF9C1 /* Pods-BreathingCoach-BreathingCoachUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreathingCoach-BreathingCoachUITests-dummy.m"; sourceTree = "<group>"; };
-		8ED9AF7BDFE0F03CE129D72D85FCA460 /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
-		9357D61506695B4EDB5014C06BE56A43 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyZeroMQ; path = SwiftyZeroMQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		972F4C0A5F2FAD2F170A37533CE1F3C8 /* Pods-BreathingCoach-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreathingCoach-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2EAFCD04DEECC2AC6B8727048A80617 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
+		9EFF6CE4DCBA66F21C8BF3E650B9D4BB /* SwiftyZeroMQ-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyZeroMQ-Info.plist"; sourceTree = "<group>"; };
 		A4B1F203BC2695B3E11AC0F40E3E07F1 /* Pods-BreathingCoach-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreathingCoach-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A62AC07A9271D8996F97CC35856BA647 /* WebSocketServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketServer.swift; path = Sources/Server/WebSocketServer.swift; sourceTree = "<group>"; };
+		A7C4ABDA0ADEAC1BC648118D32B6339D /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Sources/Context.swift; sourceTree = "<group>"; };
+		AEFEE82E1377BF096415AEF9E62021D5 /* SwiftyZeroMQ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyZeroMQ.swift; path = Sources/SwiftyZeroMQ.swift; sourceTree = "<group>"; };
 		B24388574564B5616D822C38F15E04F6 /* Pods-BreathingCoachTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreathingCoachTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C9C8BC22AA74FEDA9CF44852D28F68A4 /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
+		B5B03BBB64771E815379E8BC86332BDE /* SocketType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketType.swift; path = Sources/SocketType.swift; sourceTree = "<group>"; };
+		BDCE568168B96894A6653A9B3A6583CD /* SwiftyZeroMQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyZeroMQ.debug.xcconfig; sourceTree = "<group>"; };
+		CA3C5661B6D2BC2253624570336F463A /* SwiftyZeroMQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyZeroMQ.release.xcconfig; sourceTree = "<group>"; };
 		CBB11531964953D67BC64DED0F081604 /* Pods-BreathingCoachTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoachTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEDB24D9B1D2C94B7CFAF4658D9015C4 /* SwiftyZeroMQ-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyZeroMQ-umbrella.h"; sourceTree = "<group>"; };
 		D25E4463C0195AF12B0523710576CC2B /* Pods-BreathingCoach-BreathingCoachUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BreathingCoach-BreathingCoachUITests-frameworks.sh"; sourceTree = "<group>"; };
 		DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods-BreathingCoach */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BreathingCoach"; path = Pods_BreathingCoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFD212064ED1CC47B2560F6E20526B3B /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Server/Server.swift; sourceTree = "<group>"; };
-		E6B8353DB672E6C84ABAF6B044BC47F3 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
 		E7AB3B675E936C59EA7397539B62FCD5 /* Pods-BreathingCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathingCoach.debug.xcconfig"; sourceTree = "<group>"; };
 		E82BFB19B088CB37C59DD87EDC271FB3 /* Pods-BreathingCoach-BreathingCoachUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BreathingCoach-BreathingCoachUITests"; path = Pods_BreathingCoach_BreathingCoachUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A8100E8A1AF5E754376DE23622DFA8 /* Pods-BreathingCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BreathingCoachTests.release.xcconfig"; sourceTree = "<group>"; };
 		EAED6B5FEF0807BC1598712ED8F16244 /* Pods-BreathingCoachTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BreathingCoachTests-Info.plist"; sourceTree = "<group>"; };
-		ECFB158E08A6502A38761C96CB68975B /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
 		EF26E2279AFBDB998EBE55D56148A3F1 /* Pods-BreathingCoachTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreathingCoachTests-dummy.m"; sourceTree = "<group>"; };
 		FF26C6E9050F8F743281016100E423EC /* Pods-BreathingCoachTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BreathingCoachTests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,39 +115,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22579CC44F871C4C542FC182B991B33C /* Frameworks */ = {
+		AFBFDAB4E1D281933AC856F7E0B51A10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33C71989B6C635864EC5E4862AFAAE8A /* Foundation.framework in Frameworks */,
+				50A0013F5042F0A53E00156C50790D3F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C578EB871CDC1852CB2E07EAC2F5C3B /* Frameworks */ = {
+		E9143428B321B40D3D74B9EECBD672D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59CAD8FDBFF0BA6BBF55BBADA304721F /* Foundation.framework in Frameworks */,
+				6AC0D2D06BEED6C992CF0BCB6700463A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3426953C6A7B80A04E3839C421BD918 /* Frameworks */ = {
+		EEB549997191DE5ED52B5BE666CF4847 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7032298141DC60E66CFD38798C46A321 /* Foundation.framework in Frameworks */,
+				2896BC8D178FBD8ACC7540F62864E301 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00B2FEDCAC8A8BACE0F9A4E951E14F8C /* Pods */ = {
+		1DCC0FC955DB56CB46494DFE948AF704 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7629874EBAAE6E64DF87ACB68FB5A08E /* Starscream */,
+				DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods-BreathingCoach */,
+				E82BFB19B088CB37C59DD87EDC271FB3 /* Pods-BreathingCoach-BreathingCoachUITests */,
+				5792642167616C2B93507E7B5E08F674 /* Pods-BreathingCoachTests */,
+				8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		47EA255913BDA56D73B06D2B61D77B0F /* Targets Support Files */ = {
@@ -181,6 +163,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		498AEA06837E57AA8662725EAC321531 /* SwiftyZeroMQ */ = {
+			isa = PBXGroup;
+			children = (
+				A7C4ABDA0ADEAC1BC648118D32B6339D /* Context.swift */,
+				8334FFE4F6C25772B45576BA8289932E /* Poller.swift */,
+				71C0F72B2EBDB0761E8DA6B2655EE004 /* Socket.swift */,
+				0762A6E84A0BB6F31B3F36CBBFC6C054 /* SocketSendRecvOption.swift */,
+				B5B03BBB64771E815379E8BC86332BDE /* SocketType.swift */,
+				0AF9D401B53C2100AE77C63C158BC7EB /* SwiftyZeroMQ.h */,
+				AEFEE82E1377BF096415AEF9E62021D5 /* SwiftyZeroMQ.swift */,
+				7FD16174B6C2F32067738C98D8D9780B /* ZeroMQError.swift */,
+				430FF0FCCF9BE6EF1C0B95C99729F4FA /* zmq.h */,
+				FF07442319E990D999E462ABB2F09FDE /* Frameworks */,
+				8EB24A1F6A3735D304F56BF2A8734550 /* Support Files */,
+			);
+			name = SwiftyZeroMQ;
+			path = SwiftyZeroMQ;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,33 +190,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7629874EBAAE6E64DF87ACB68FB5A08E /* Starscream */ = {
+		8EB24A1F6A3735D304F56BF2A8734550 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A2EAFCD04DEECC2AC6B8727048A80617 /* Compression.swift */,
-				7175E21DED4337E7BBD3EF7424F315F6 /* Data+Extensions.swift */,
-				4A0925310BE76B051E1B51E7FBB37F35 /* Engine.swift */,
-				3AF39A541BA78B8472A0F9D4E3504B90 /* FoundationHTTPHandler.swift */,
-				81F95157FC4CC8593A1B1E4607562122 /* FoundationHTTPServerHandler.swift */,
-				5831A57C2E79638C447411ED69EB6C42 /* FoundationSecurity.swift */,
-				3D7E34251E9353A38AC748BB94EDC575 /* FoundationTransport.swift */,
-				37C291A02C054326B5C6022EACD814E4 /* FrameCollector.swift */,
-				1454E39E11FD28A611495E03B2015FD4 /* Framer.swift */,
-				35ED0E33A6DD024AC0E71FEF3EA74D7C /* HTTPHandler.swift */,
-				56ADCC3B462E7AE2D80872C7A66CA4A7 /* NativeEngine.swift */,
-				4FC292255BA6A323D7D1C01215CC6591 /* Security.swift */,
-				DFD212064ED1CC47B2560F6E20526B3B /* Server.swift */,
-				16D70531198624C7D8B14FF91C62FF6B /* StringHTTPHandler.swift */,
-				56CCA8582A00BBFBC2E9AFFC1C1D53A9 /* TCPTransport.swift */,
-				C9C8BC22AA74FEDA9CF44852D28F68A4 /* Transport.swift */,
-				4D2727BA14E02E7210DD6B547EA7D394 /* WebSocket.swift */,
-				A62AC07A9271D8996F97CC35856BA647 /* WebSocketServer.swift */,
-				1918C09D193EF7F62A7C2611F12AC44B /* WSCompression.swift */,
-				8ED9AF7BDFE0F03CE129D72D85FCA460 /* WSEngine.swift */,
-				C34F19E6E210C87A192216575C48E771 /* Support Files */,
+				70B66B3C260919DED39C1109DCED80B2 /* SwiftyZeroMQ.modulemap */,
+				7DD66154FB4C28009B7DCCFB0556DD17 /* SwiftyZeroMQ-dummy.m */,
+				9EFF6CE4DCBA66F21C8BF3E650B9D4BB /* SwiftyZeroMQ-Info.plist */,
+				3EAAB9306FE21D7CECFD6EDF6CD7FE18 /* SwiftyZeroMQ-prefix.pch */,
+				CEDB24D9B1D2C94B7CFAF4658D9015C4 /* SwiftyZeroMQ-umbrella.h */,
+				BDCE568168B96894A6653A9B3A6583CD /* SwiftyZeroMQ.debug.xcconfig */,
+				CA3C5661B6D2BC2253624570336F463A /* SwiftyZeroMQ.release.xcconfig */,
 			);
-			name = Starscream;
-			path = Starscream;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyZeroMQ";
 			sourceTree = "<group>";
 		};
 		900CFD0A54A54A0B67800EFAE88BB293 /* Pods-BreathingCoach-BreathingCoachUITests */ = {
@@ -235,19 +222,12 @@
 			path = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests";
 			sourceTree = "<group>";
 		};
-		C34F19E6E210C87A192216575C48E771 /* Support Files */ = {
+		AE3A4DDF45857A3EC6FD7BD824ACD1A8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9357D61506695B4EDB5014C06BE56A43 /* Starscream.modulemap */,
-				21B65F09370A4D9877255EC1C47060A2 /* Starscream-dummy.m */,
-				85C44A9AB6F12498BFC8233B9D599206 /* Starscream-Info.plist */,
-				010F5C43A348BC3C417C21FA354444E2 /* Starscream-prefix.pch */,
-				ECFB158E08A6502A38761C96CB68975B /* Starscream-umbrella.h */,
-				2C1CF04602B9D61F89BCC51DEA7939B0 /* Starscream.debug.xcconfig */,
-				E6B8353DB672E6C84ABAF6B044BC47F3 /* Starscream.release.xcconfig */,
+				498AEA06837E57AA8662725EAC321531 /* SwiftyZeroMQ */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Starscream";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C4B26B8A957AEA8554DA44186FF8AF7D /* Pods-BreathingCoach */ = {
@@ -272,8 +252,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				00B2FEDCAC8A8BACE0F9A4E951E14F8C /* Pods */,
-				E42A52A06EC70243F5D6E2A9A02476F8 /* Products */,
+				AE3A4DDF45857A3EC6FD7BD824ACD1A8 /* Pods */,
+				1DCC0FC955DB56CB46494DFE948AF704 /* Products */,
 				47EA255913BDA56D73B06D2B61D77B0F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -302,20 +282,25 @@
 			path = "Target Support Files/Pods-BreathingCoachTests";
 			sourceTree = "<group>";
 		};
-		E42A52A06EC70243F5D6E2A9A02476F8 /* Products */ = {
+		FF07442319E990D999E462ABB2F09FDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods-BreathingCoach */,
-				E82BFB19B088CB37C59DD87EDC271FB3 /* Pods-BreathingCoach-BreathingCoachUITests */,
-				5792642167616C2B93507E7B5E08F674 /* Pods-BreathingCoachTests */,
-				891B2270823847ED23F2ECFC28F935EC /* Starscream */,
+				0C1227DED6CCA4A61247A2C949E89563 /* libzmq-ios.a */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		086A3563C7E7A0CAA255957388698224 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3779377ADA6831B5C395FA3707999F21 /* Pods-BreathingCoach-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2DA2C4AE6E29E41762AE357A66836524 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,27 +309,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CBD0F9C48772E87C2F80436B70E099E /* Headers */ = {
+		7C58BE9DD7984008225A9E31D602E5F7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00C9C2E54995B3BEA1C999016833A58B /* Starscream-umbrella.h in Headers */,
+				E6A7BA236139D2C2BFD538E658BA044A /* Pods-BreathingCoach-BreathingCoachUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4318C0BC6BCD1AF374D9216C263506 /* Headers */ = {
+		D9EC309AE99A83AA5AF4647C4F78A523 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003816BFA05CF66896A4D80ADF89248C /* Pods-BreathingCoach-BreathingCoachUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D6D7A23A5867CC90DED8603DC67EEE70 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4017A49666028E0F68157D6A7B5A22C1 /* Pods-BreathingCoach-umbrella.h in Headers */,
+				996CC1EA1E765BDF714936443DAD11F9 /* SwiftyZeroMQ.h in Headers */,
+				1B4E17AF004413ED49D35C9772695089 /* SwiftyZeroMQ-umbrella.h in Headers */,
+				8A215260DA35A60B9DCBC3DEBC9A0870 /* zmq.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,17 +332,17 @@
 /* Begin PBXNativeTarget section */
 		4F493FA3EE85687E27251A78E0AED419 /* Pods-BreathingCoach */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CB4A32CD8DFD2CCB41A443AB02EA45F /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach" */;
+			buildConfigurationList = EAF09516738FB55D981D287382F0520E /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach" */;
 			buildPhases = (
-				D6D7A23A5867CC90DED8603DC67EEE70 /* Headers */,
-				1C2E277A9A8D83AB38EBEFFC1A3B3258 /* Sources */,
-				3C578EB871CDC1852CB2E07EAC2F5C3B /* Frameworks */,
-				9C73DC770CD0E39FED476EB8D63434E5 /* Resources */,
+				086A3563C7E7A0CAA255957388698224 /* Headers */,
+				0BDAD6589215C9BF76D10DFAC9E802DA /* Sources */,
+				EEB549997191DE5ED52B5BE666CF4847 /* Frameworks */,
+				0F704F2B680B198C7F60E5451BD53CD2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3D671499F286978ED15DA5C2B4277570 /* PBXTargetDependency */,
+				F33E5B6F0ED948AFFB8021F5A0A440D8 /* PBXTargetDependency */,
 			);
 			name = "Pods-BreathingCoach";
 			productName = Pods_BreathingCoach;
@@ -382,7 +361,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				98C5FBEDE6948BA6317F7D2F81B8EC84 /* PBXTargetDependency */,
+				157A09E239AD6982147DA1916E54BD9A /* PBXTargetDependency */,
 			);
 			name = "Pods-BreathingCoachTests";
 			productName = Pods_BreathingCoachTests;
@@ -391,39 +370,39 @@
 		};
 		83D053A413717B40027DC4035E65DF6B /* Pods-BreathingCoach-BreathingCoachUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84C85FF352816D3D0795EF6A4DF5B2AF /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach-BreathingCoachUITests" */;
+			buildConfigurationList = FD67C129168817808838B456F0CFEA35 /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach-BreathingCoachUITests" */;
 			buildPhases = (
-				7D4318C0BC6BCD1AF374D9216C263506 /* Headers */,
-				CC2265479187478CB44D25D0D33597CB /* Sources */,
-				B3426953C6A7B80A04E3839C421BD918 /* Frameworks */,
-				412161B58737A98825E8A4091C0AF5E6 /* Resources */,
+				7C58BE9DD7984008225A9E31D602E5F7 /* Headers */,
+				C4A96FB03977C3E6E3DACAD66575CA3A /* Sources */,
+				E9143428B321B40D3D74B9EECBD672D7 /* Frameworks */,
+				ED6D06AF1101DA30548095F5CD8A643E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				41026068B713A94E6E144B76B7181386 /* PBXTargetDependency */,
+				A72A85B0A67D7ACF189F1EF4F5B97607 /* PBXTargetDependency */,
 			);
 			name = "Pods-BreathingCoach-BreathingCoachUITests";
 			productName = Pods_BreathingCoach_BreathingCoachUITests;
 			productReference = E82BFB19B088CB37C59DD87EDC271FB3 /* Pods-BreathingCoach-BreathingCoachUITests */;
 			productType = "com.apple.product-type.framework";
 		};
-		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+		A6AD2F873FE44AD77AB8EE9F86363AF3 /* SwiftyZeroMQ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E342B11DDD91D2A8D5CEC382A58F29D /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildConfigurationList = 3CA603BB0A95E1651C707E4FA78E2CEB /* Build configuration list for PBXNativeTarget "SwiftyZeroMQ" */;
 			buildPhases = (
-				3CBD0F9C48772E87C2F80436B70E099E /* Headers */,
-				3CBD844312542615DF274F62D22D823A /* Sources */,
-				22579CC44F871C4C542FC182B991B33C /* Frameworks */,
-				6D93F8ECBEC0B1B601F31CAB9D03FAA2 /* Resources */,
+				D9EC309AE99A83AA5AF4647C4F78A523 /* Headers */,
+				43383F5ECE7D6CCF6DEC8872779CD5A2 /* Sources */,
+				AFBFDAB4E1D281933AC856F7E0B51A10 /* Frameworks */,
+				4DB0CA2F79C315A01379D594999B1AE5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Starscream;
-			productName = Starscream;
-			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream */;
+			name = SwiftyZeroMQ;
+			productName = SwiftyZeroMQ;
+			productReference = 8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -444,19 +423,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E42A52A06EC70243F5D6E2A9A02476F8 /* Products */;
+			productRefGroup = 1DCC0FC955DB56CB46494DFE948AF704 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4F493FA3EE85687E27251A78E0AED419 /* Pods-BreathingCoach */,
 				83D053A413717B40027DC4035E65DF6B /* Pods-BreathingCoach-BreathingCoachUITests */,
 				7998B334EAFB81766EEFCEF4F146AAB4 /* Pods-BreathingCoachTests */,
-				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
+				A6AD2F873FE44AD77AB8EE9F86363AF3 /* SwiftyZeroMQ */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0F704F2B680B198C7F60E5451BD53CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C0660854F3ECBB917C47297308722B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,21 +450,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		412161B58737A98825E8A4091C0AF5E6 /* Resources */ = {
+		4DB0CA2F79C315A01379D594999B1AE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D93F8ECBEC0B1B601F31CAB9D03FAA2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C73DC770CD0E39FED476EB8D63434E5 /* Resources */ = {
+		ED6D06AF1101DA30548095F5CD8A643E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -496,149 +475,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C2E277A9A8D83AB38EBEFFC1A3B3258 /* Sources */ = {
+		0BDAD6589215C9BF76D10DFAC9E802DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1718AE84BAC9DC7A1EECBDCCAA18E44 /* Pods-BreathingCoach-dummy.m in Sources */,
+				8E25AED19FE4E6E0B281AA6A28DC63FE /* Pods-BreathingCoach-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CBD844312542615DF274F62D22D823A /* Sources */ = {
+		43383F5ECE7D6CCF6DEC8872779CD5A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA2736CE4B16FD4D82450863EC58507 /* Compression.swift in Sources */,
-				631654C419F62FE0270E1DF79CCF6F8B /* Data+Extensions.swift in Sources */,
-				FAFD54F649DC5D69DD05D517A0131968 /* Engine.swift in Sources */,
-				4AB6FCF35B998F60ED9EB100542EEA31 /* FoundationHTTPHandler.swift in Sources */,
-				5006DD4B60A05AF56EA0706A680BABF6 /* FoundationHTTPServerHandler.swift in Sources */,
-				5281197FE8CC6E6954315F11B8F553D0 /* FoundationSecurity.swift in Sources */,
-				489EF4A7D4992C47CF590AEF9AA418FC /* FoundationTransport.swift in Sources */,
-				EB5C3537AD21658D3EC873A4A4AFDE30 /* FrameCollector.swift in Sources */,
-				CC235941F0CF9FA8C0FA3323A0D18203 /* Framer.swift in Sources */,
-				7DDEA2F73F2A02D88D5164B46BA2C7E8 /* HTTPHandler.swift in Sources */,
-				C28A0006DD1C9AB062763C8FA2B3F93D /* NativeEngine.swift in Sources */,
-				69A591F2BDE4941B391C102F4C26B115 /* Security.swift in Sources */,
-				DF9BE4B3E95B007977780C9EFDA3EFBE /* Server.swift in Sources */,
-				3A655D6817E99F062266BB601B0EEEDF /* Starscream-dummy.m in Sources */,
-				046AC7AA224C78A31C0A8FACB11D2D28 /* StringHTTPHandler.swift in Sources */,
-				6C0DACBE00A34619DEDB9A65CB959BA5 /* TCPTransport.swift in Sources */,
-				4A3B1BE129FDA231AC217E1C6DB2B8C8 /* Transport.swift in Sources */,
-				B44349C69B2C0AF407B678B20DC9CB80 /* WebSocket.swift in Sources */,
-				3F3E9C6FF4BCB6F4FF18D9121CC3E42F /* WebSocketServer.swift in Sources */,
-				FA2A3CCAE01CF0108D2FDB7C8108B988 /* WSCompression.swift in Sources */,
-				BB056B9351B1BE41C2703393F69623DD /* WSEngine.swift in Sources */,
+				D2901DF1DB9EE3925A988C943AFF90FD /* Context.swift in Sources */,
+				DC8073CF9DB1413EE87E182B7B1EE507 /* Poller.swift in Sources */,
+				D5A27C801DC8C4FAAFD6B75E29DB479B /* Socket.swift in Sources */,
+				89ED37E2F8EBC05E9BA1E2A1D5977918 /* SocketSendRecvOption.swift in Sources */,
+				F3E4B93C237CB8A989F82ED8523EE2A6 /* SocketType.swift in Sources */,
+				50F192EE32C9D946672179032DD9ADF7 /* SwiftyZeroMQ.swift in Sources */,
+				EE435B6BF1E6760732C20909ACDD7F95 /* SwiftyZeroMQ-dummy.m in Sources */,
+				3C58522CB799E182DD7B9ADB84CDE75F /* ZeroMQError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC2265479187478CB44D25D0D33597CB /* Sources */ = {
+		C4A96FB03977C3E6E3DACAD66575CA3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				301828F76E1B6EE449C418DD06589338 /* Pods-BreathingCoach-BreathingCoachUITests-dummy.m in Sources */,
+				AC9E48FA8B084416EFFE9B173DD4B9F2 /* Pods-BreathingCoach-BreathingCoachUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3D671499F286978ED15DA5C2B4277570 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Starscream;
-			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
-			targetProxy = AB66B72A0E1B4EAF177B8C019C15C39E /* PBXContainerItemProxy */;
-		};
-		41026068B713A94E6E144B76B7181386 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Starscream;
-			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
-			targetProxy = B3075DB660CE223C70BD935654DC1422 /* PBXContainerItemProxy */;
-		};
-		98C5FBEDE6948BA6317F7D2F81B8EC84 /* PBXTargetDependency */ = {
+		157A09E239AD6982147DA1916E54BD9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-BreathingCoach";
 			target = 4F493FA3EE85687E27251A78E0AED419 /* Pods-BreathingCoach */;
-			targetProxy = 52F66066D7ECEE9499C3184FAF888323 /* PBXContainerItemProxy */;
+			targetProxy = 99C58BC10E72F46996041C73B22A0871 /* PBXContainerItemProxy */;
+		};
+		A72A85B0A67D7ACF189F1EF4F5B97607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyZeroMQ;
+			target = A6AD2F873FE44AD77AB8EE9F86363AF3 /* SwiftyZeroMQ */;
+			targetProxy = 6D23DBC092E057DF6EDB4D6430C58634 /* PBXContainerItemProxy */;
+		};
+		F33E5B6F0ED948AFFB8021F5A0A440D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyZeroMQ;
+			target = A6AD2F873FE44AD77AB8EE9F86363AF3 /* SwiftyZeroMQ */;
+			targetProxy = D2231FBEF34D075E14595F95486B4807 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B04E9580CF9499B330EEC8732CF49BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6B8353DB672E6C84ABAF6B044BC47F3 /* Starscream.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_MODULE_NAME = Starscream;
-				PRODUCT_NAME = Starscream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2285E32B8CE01B0E59452A287B646241 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8A8100E8A1AF5E754376DE23622DFA8 /* Pods-BreathingCoachTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6C6B0370790FC87A127321BDE6A04218 /* Debug */ = {
+		013C2E3055B2ADA2B5DCA8579338F4A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7AB3B675E936C59EA7397539B62FCD5 /* Pods-BreathingCoach.debug.xcconfig */;
 			buildSettings = {
@@ -654,7 +546,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoach/Pods-BreathingCoach-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,69 +567,44 @@
 			};
 			name = Debug;
 		};
-		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+		2EAA04394A23B74D66C4120AEF5E4DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D8F5CA02722B1FF8B18B07A11C19BCF /* Pods-BreathingCoachTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		96A80C5162712C844AB8A539B7FFDC46 /* Release */ = {
+		4D92434BA65CAD34F4D974AB0FA71236 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23F4F3310659DF729E5A588BBD6C3B9F /* Pods-BreathingCoach-BreathingCoachUITests.release.xcconfig */;
 			buildSettings = {
@@ -753,7 +620,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,12 +642,10 @@
 			};
 			name = Release;
 		};
-		A80B69E2DD8EEE96BC6CBAACA9AAFEF4 /* Debug */ = {
+		5BB7813CCB5A7F680C417D760CA98518 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D8F5CA02722B1FF8B18B07A11C19BCF /* Pods-BreathingCoachTests.debug.xcconfig */;
+			baseConfigurationReference = CA3C5661B6D2BC2253624570336F463A /* SwiftyZeroMQ.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -789,67 +654,30 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyZeroMQ;
+				PRODUCT_NAME = SwiftyZeroMQ;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		ABB066C2288E1C5C5588C70CE89B29CB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78AD0E2971C4096053219D5739FCBC9C /* Pods-BreathingCoach-BreathingCoachUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -902,7 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -915,10 +743,11 @@
 			};
 			name = Debug;
 		};
-		D39C2D67B3257191EA340C336BB84DB6 /* Debug */ = {
+		7A7F666192D25FCBD1259CAE18776C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C1CF04602B9D61F89BCC51DEA7939B0 /* Starscream.debug.xcconfig */;
+			baseConfigurationReference = 78AD0E2971C4096053219D5739FCBC9C /* Pods-BreathingCoach-BreathingCoachUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -928,18 +757,53 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
-				PRODUCT_MODULE_NAME = Starscream;
-				PRODUCT_NAME = Starscream;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		924C0E421B22B07FFAB2E095ADFEE45A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDCE568168B96894A6653A9B3A6583CD /* SwiftyZeroMQ.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyZeroMQ;
+				PRODUCT_NAME = SwiftyZeroMQ;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -950,7 +814,7 @@
 			};
 			name = Debug;
 		};
-		DA2D92C147C8858E4F408C7BECB930FD /* Release */ = {
+		D96A2D7CB3F40BEEE6AC8B05329E1A3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 189109F2ABBCCBB45DB380D73A365C95 /* Pods-BreathingCoach.release.xcconfig */;
 			buildSettings = {
@@ -966,7 +830,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoach/Pods-BreathingCoach-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -988,14 +852,123 @@
 			};
 			name = Release;
 		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F809685791582FEA1C51AB20228ABBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A8100E8A1AF5E754376DE23622DFA8 /* Pods-BreathingCoachTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		22DE435A0B92521B2AE135F8701D80DB /* Build configuration list for PBXNativeTarget "Pods-BreathingCoachTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A80B69E2DD8EEE96BC6CBAACA9AAFEF4 /* Debug */,
-				2285E32B8CE01B0E59452A287B646241 /* Release */,
+				2EAA04394A23B74D66C4120AEF5E4DE6 /* Debug */,
+				F809685791582FEA1C51AB20228ABBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CA603BB0A95E1651C707E4FA78E2CEB /* Build configuration list for PBXNativeTarget "SwiftyZeroMQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924C0E421B22B07FFAB2E095ADFEE45A /* Debug */,
+				5BB7813CCB5A7F680C417D760CA98518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1003,35 +976,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
-				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CB4A32CD8DFD2CCB41A443AB02EA45F /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach" */ = {
+		EAF09516738FB55D981D287382F0520E /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C6B0370790FC87A127321BDE6A04218 /* Debug */,
-				DA2D92C147C8858E4F408C7BECB930FD /* Release */,
+				013C2E3055B2ADA2B5DCA8579338F4A6 /* Debug */,
+				D96A2D7CB3F40BEEE6AC8B05329E1A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E342B11DDD91D2A8D5CEC382A58F29D /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+		FD67C129168817808838B456F0CFEA35 /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach-BreathingCoachUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D39C2D67B3257191EA340C336BB84DB6 /* Debug */,
-				0B04E9580CF9499B330EEC8732CF49BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		84C85FF352816D3D0795EF6A4DF5B2AF /* Build configuration list for PBXNativeTarget "Pods-BreathingCoach-BreathingCoachUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ABB066C2288E1C5C5588C70CE89B29CB /* Debug */,
-				96A80C5162712C844AB8A539B7FFDC46 /* Release */,
+				7A7F666192D25FCBD1259CAE18776C1B /* Debug */,
+				4D92434BA65CAD34F4D974AB0FA71236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
