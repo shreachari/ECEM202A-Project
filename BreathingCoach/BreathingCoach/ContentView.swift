@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  BreathingCoach
-//
-//  Created by Vaishnavi  manthena on 10/27/23.
-//
-
 import SwiftUI
 import SwiftyZeroMQ
 
@@ -49,5 +42,11 @@ struct ContentView: View {
                 .padding()
             }
         }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
