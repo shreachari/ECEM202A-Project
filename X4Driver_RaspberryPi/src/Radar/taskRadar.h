@@ -3,13 +3,14 @@
 
 #ifdef __cplusplus
 #include "x4driver.h"
+#include "zmq.hpp"
 
 /**
  * @brief Radar task.
  *
  * @return nothing
  */
-int taskRadar(void);
+int taskRadar(zmq::socket_t&);
 
 /**
  * @brief Initialize Radar task.

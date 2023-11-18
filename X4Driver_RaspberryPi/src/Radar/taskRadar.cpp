@@ -10,6 +10,7 @@
 #include "taskRadar.h"
 #include "x4driver.h"
 #include "xep_hal.h"
+#include <functional>
 
 volatile xtx4driver_errors_t x4_initialize_status = XEP_ERROR_X4DRIVER_UNINITIALIZED;
 X4Driver_t *x4driver = NULL;
@@ -18,6 +19,9 @@ X4Driver_t *x4driver = NULL;
 
 using namespace std;
 std::recursive_mutex x4driver_mutex;
+
+zmq::socket_t * networking_socket;
+
 
 typedef struct
 {
@@ -31,7 +35,7 @@ typedef struct
     X4Driver_t *x4driver;
 } RadarTaskParameters_t;
 
-void x4driver_data_ready(void)
+void x4driver_data_ready()
 {
     uint32_t status = XEP_ERROR_X4DRIVER_OK;
     uint32_t bin_count = 0;
@@ -59,12 +63,21 @@ void x4driver_data_ready(void)
         printf("fail to get x4 frame data errorcode:%d! \n", status);
     }
 
+    /*
     printf("Size:%d,New Frame Data Normolized(%d){\n", fdata_count, frame_counter);
     for (uint32_t i = 0; i < fdata_count; i++)
     {
-        printf(" %f, ", data_frame_normolized[i]);
+        if(i == 0){
+            printf(" %f, ", data_frame_normolized[i]);
+        }
     }
     printf("}\n");
+    */
+    printf(" %f, ", data_frame_normolized[13]);
+    std::string message = " " + std::to_string(data_frame_normolized[13]);
+    zmq::message_t zmqMessage(message.c_str(), message.size());
+    (*networking_socket).send(zmqMessage);
+
 }
 
 static uint32_t x4driver_callback_take_sem(void *sem, uint32_t timeout)
@@ -211,12 +224,16 @@ uint32_t task_radar_init(X4Driver_t **x4driver)
     return XT_SUCCESS;
 }
 
-int taskRadar(void)
+int taskRadar(zmq::socket_t& socket)
 {
     printf("task_radar start!\n");
 
     uint32_t status = 0;
     //uint8_t* data_frame;
+
+    networking_socket = &socket;
+    
+    (*networking_socket).bind("tcp://192.168.8.219:5555");
 
     //initialize radar task
 
