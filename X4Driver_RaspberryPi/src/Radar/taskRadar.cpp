@@ -10,7 +10,6 @@
 #include "taskRadar.h"
 #include "x4driver.h"
 #include "xep_hal.h"
-#include <functional>
 
 volatile xtx4driver_errors_t x4_initialize_status = XEP_ERROR_X4DRIVER_UNINITIALIZED;
 X4Driver_t *x4driver = NULL;
@@ -35,7 +34,7 @@ typedef struct
     X4Driver_t *x4driver;
 } RadarTaskParameters_t;
 
-void x4driver_data_ready()
+void x4driver_data_ready(void)
 {
     uint32_t status = XEP_ERROR_X4DRIVER_OK;
     uint32_t bin_count = 0;
