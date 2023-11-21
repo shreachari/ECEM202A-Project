@@ -32,7 +32,7 @@ class ZeroMQSubscriber {
                         usleep(250)
                         DispatchQueue.main.async {
                             self.sensorValue = (data as NSString).floatValue
-                            self.textBinding.wrappedValue = self.formatText(data)
+                            self.textBinding.wrappedValue = data
                         }
                     }
                 }
