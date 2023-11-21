@@ -16,7 +16,7 @@ struct BoxBreathing: View {
     @State private var timer: Timer?
     @State private var isBreathing = false
     // CHANGE
-    @State private var totalTime = 20
+    @State private var totalTime = 60
     @State private var showThankYou = false
     @State private var displayWaveforms = false
     
@@ -152,6 +152,7 @@ struct BoxBreathing: View {
                 totalTime -= 4
             } else {
                 timer.invalidate()
+                zmqSubscriber.disconnectFromSensor()
                 showThankYou = true
             }
         }

@@ -5,10 +5,18 @@ class ZeroMQSubscriber {
 
     var textBinding: Binding<String>
     var sensorValue: Float
+    var context: SwiftyZeroMQ.Context
+    var subscriber: SwiftyZeroMQ.Socket
 
     init(text: Binding<String>) {
         self.textBinding = text
         sensorValue = 0.0
+        do{
+            self.context = try SwiftyZeroMQ.Context()
+            self.subscriber = try context.socket(.subscribe)
+        }catch{
+            fatalError("Failed to initialize ZeroMQ context and socket: \(error)")
+        }
     }
 
     
@@ -16,19 +24,19 @@ class ZeroMQSubscriber {
         DispatchQueue.global(qos: .background).async {
             do {
                 
-                let context = try SwiftyZeroMQ.Context()
-                let subscriber = try context.socket(.subscribe)
-                try subscriber.connect("tcp://192.168.8.219:5555")
+                //let context = try SwiftyZeroMQ.Context()
+                //let subscriber = try context.socket(.subscribe)
+                try self.subscriber.connect("tcp://192.168.8.219:5555")
                 
                 usleep(1000)
                 
-                try subscriber.setSubscribe(nil)
+                try self.subscriber.setSubscribe(nil)
                 
                 usleep(250)
                 
                 
                 while true {
-                    if let data = try subscriber.recv() {
+                    if let data = try self.subscriber.recv() {
                         usleep(250)
                         DispatchQueue.main.async {
                             self.sensorValue = (data as NSString).floatValue
@@ -39,6 +47,15 @@ class ZeroMQSubscriber {
             } catch {
                 print("Error: \(error)")
             }
+        }
+    }
+    
+    func disconnectFromSensor(){
+        do{
+            try self.subscriber.close()
+            try self.context.close()
+        }catch{
+            fatalError("Failed to close ZeroMQ context and socket: \(error)")
         }
     }
 }
