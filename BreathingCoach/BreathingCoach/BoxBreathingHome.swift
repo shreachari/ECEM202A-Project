@@ -53,7 +53,7 @@ struct BoxBreathingHome: View {
 }
 
 
-struct ContentView2_Previews: PreviewProvider {
+struct BoxBreathingHome_Previews: PreviewProvider {
     static var previews: some View {
         BoxBreathingHome()
     }

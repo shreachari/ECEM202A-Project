@@ -1,35 +1,27 @@
 import SwiftUI
-import SwiftyZeroMQ
 
-struct ContentView: View {
-    
+struct Menu: View {
     var body: some View {
         NavigationView{
             
             ZStack{
-                Color.indigo.edgesIgnoringSafeArea(.all)
+                Color.white.edgesIgnoringSafeArea(.all)
                 
                 VStack(alignment: .center) {
-                    Text("Breathing Coach")
+                    Text("Select an exercise")
                         .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(Color.orange)
                         .multilineTextAlignment(.leading)
                         .lineLimit(1)
-                    //Image
-                    Image("Meditation")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 450)
                     
-                    
-                    NavigationLink(destination: Menu()) {
+                    NavigationLink(destination: BoxBreathingHome()) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(height: 44) // Adjust the height as needed
                                 .foregroundColor(Color.yellow)
                             
-                            Text("SELECT EXERCISE!")
+                            Text("Box Breathing")
                                 .foregroundColor(Color.black)
                                 .font(.headline)
                                 .fontWeight(.heavy)
@@ -45,8 +37,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Menu_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Menu()
     }
 }
