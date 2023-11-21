@@ -114,13 +114,13 @@ struct BoxBreathing: View {
                         .font(.title)
                         .fontWeight(.bold)
                     
-                    NavigationLink(destination: BoxBreathingHome()) {
+                    NavigationLink(destination: Menu()) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(height: 44) // Adjust the height as needed
                                 .foregroundColor(Color.yellow)
                             
-                            Text("Return to Home")
+                            Text("Return to Menu")
                                 .foregroundColor(Color.black)
                                 .font(.headline)
                                 .fontWeight(.heavy)
