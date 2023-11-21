@@ -10,7 +10,8 @@ class ChartData: ObservableObject {
 }
 
 struct BoxBreathing: View {
-    @State private var countdown = 10
+    //CHANGE
+    @State private var countdown = 3
     @State var breathingCountdown = 4
     @State private var breathingText = "Inhale"
     @State private var breathingVal = 1
@@ -18,7 +19,7 @@ struct BoxBreathing: View {
     @State private var isBreathing = false
     var breathingCountdownTimer: Timer?
     // CHANGE
-    @State private var totalTime = 60
+    @State private var totalTime = 15
     @State private var showThankYou = false
     @State private var displayWaveforms = false
     
@@ -160,6 +161,7 @@ struct BoxBreathing: View {
                 totalTime -= 4
             } else {
                 timer.invalidate()
+                zmqSubscriber.disconnectFromSensor()
                 showThankYou = true
             }
         }

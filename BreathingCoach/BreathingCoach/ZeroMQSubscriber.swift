@@ -7,10 +7,12 @@ class ZeroMQSubscriber {
     var sensorValue: Float
     var context: SwiftyZeroMQ.Context
     var subscriber: SwiftyZeroMQ.Socket
+    var runningSession: Bool
 
     init(text: Binding<String>) {
         self.textBinding = text
         sensorValue = 0.0
+        runningSession = true
         do{
             self.context = try SwiftyZeroMQ.Context()
             self.subscriber = try context.socket(.subscribe)
@@ -23,7 +25,6 @@ class ZeroMQSubscriber {
     func connectAndCollectSensorData() {
         DispatchQueue.global(qos: .background).async {
             do {
-                
                 //let context = try SwiftyZeroMQ.Context()
                 //let subscriber = try context.socket(.subscribe)
                 try self.subscriber.connect("tcp://192.168.8.219:5555")
@@ -35,7 +36,7 @@ class ZeroMQSubscriber {
                 usleep(250)
                 
                 
-                while true {
+                while self.runningSession {
                     if let data = try self.subscriber.recv() {
                         usleep(250)
                         DispatchQueue.main.async {
@@ -52,9 +53,11 @@ class ZeroMQSubscriber {
     
     func disconnectFromSensor(){
         do{
+            self.runningSession = false
             try self.subscriber.close()
             try self.context.close()
-        }catch{
+            print("Closing context and socket")
+        } catch {
             fatalError("Failed to close ZeroMQ context and socket: \(error)")
         }
     }
