@@ -83,9 +83,9 @@
 		7FD16174B6C2F32067738C98D8D9780B /* ZeroMQError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroMQError.swift; path = Sources/ZeroMQError.swift; sourceTree = "<group>"; };
 		8334FFE4F6C25772B45576BA8289932E /* Poller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poller.swift; path = Sources/Poller.swift; sourceTree = "<group>"; };
 		8A4B1CB573AEBB0C35A3968F1E1FF9C1 /* Pods-BreathingCoach-BreathingCoachUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BreathingCoach-BreathingCoachUITests-dummy.m"; sourceTree = "<group>"; };
-		8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyZeroMQ; path = SwiftyZeroMQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyZeroMQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		972F4C0A5F2FAD2F170A37533CE1F3C8 /* Pods-BreathingCoach-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BreathingCoach-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EFF6CE4DCBA66F21C8BF3E650B9D4BB /* SwiftyZeroMQ-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyZeroMQ-Info.plist"; sourceTree = "<group>"; };
 		A4B1F203BC2695B3E11AC0F40E3E07F1 /* Pods-BreathingCoach-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BreathingCoach-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A7C4ABDA0ADEAC1BC648118D32B6339D /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Sources/Context.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				DDEAD20B2B5B9B4B410EB84F0BAC157C /* Pods-BreathingCoach */,
 				E82BFB19B088CB37C59DD87EDC271FB3 /* Pods-BreathingCoach-BreathingCoachUITests */,
 				5792642167616C2B93507E7B5E08F674 /* Pods-BreathingCoachTests */,
-				8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ */,
+				8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,7 +178,6 @@
 				FF07442319E990D999E462ABB2F09FDE /* Frameworks */,
 				8EB24A1F6A3735D304F56BF2A8734550 /* Support Files */,
 			);
-			name = SwiftyZeroMQ;
 			path = SwiftyZeroMQ;
 			sourceTree = "<group>";
 		};
@@ -402,7 +401,7 @@
 			);
 			name = SwiftyZeroMQ;
 			productName = SwiftyZeroMQ;
-			productReference = 8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ */;
+			productReference = 8B77836A66AA597753D6C34CF7021A6B /* SwiftyZeroMQ.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -657,7 +656,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -795,7 +794,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyZeroMQ/SwiftyZeroMQ-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
