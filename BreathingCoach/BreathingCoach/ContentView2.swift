@@ -1,11 +1,13 @@
-//
-//  ContentView2.swift
-//  BreathingCoach
-//
-//  Created by Vaishnavi  manthena on 11/11/23.
-//
-
 import SwiftUI
+import Charts
+
+class ChartData: ObservableObject {
+    @Published var data: [Float]
+
+    init(data: [Float]) {
+        self.data = data
+    }
+}
 
 struct ContentView2: View {
     
@@ -21,6 +23,8 @@ struct ContentView2: View {
     @State private var sensorDataText = "Sensor data goes here...\n\n"
     let zmqSubscriber = ZeroMQSubscriber(text: .constant(""))
     
+    @ObservedObject var chartData: ChartData = ChartData(data: Array(repeating: 0.0, count: 20))
+    
     var body: some View {
         ZStack{
             Color.mint.edgesIgnoringSafeArea(.all)
@@ -32,15 +36,12 @@ struct ContentView2: View {
                     .multilineTextAlignment(.leading)
                     .lineLimit(1)
                 
-                //
                 Text(instructions)
                             .font(.headline)
                             .foregroundColor(.black)
                             .padding()
                 
                 Button(action: {
-                            // Action to be performed when the button is tapped
-                            // You can add your code here
                     zmqSubscriber.connectAndCollectSensorData()
                     }) {
                         Text("Get Started!!")
@@ -50,7 +51,23 @@ struct ContentView2: View {
                             .background(Color.black)
                             .cornerRadius(10)
                     }
-                
+                VStack {
+                    Chart(Array(chartData.data.enumerated()), id: \.0) { index, magnitude in
+                        LineMark(
+                            x: .value("Time", String(index)),
+                            y: .value("Magnitude", magnitude)
+                        )
+                    }
+                    .chartYScale(domain: [-0.001, 0.01])
+                }
+                .onAppear {
+                    // Simulate updating data at regular intervals
+                    Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
+                        let newDataPoint = zmqSubscriber.sensorValue
+                        print(newDataPoint)
+                        self.updateChartData(with: newDataPoint)
+                    }
+                }
                 
                 TextEditor(text: $sensorDataText)
                             .font(.headline)
@@ -67,7 +84,18 @@ struct ContentView2: View {
             .padding()
         }
     }
+    
+    private func updateChartData(with newDataPoint: Float) {
+        // Update the @Published property, triggering a refresh of the UI
+        chartData.data.append(newDataPoint)
+
+        // Limit the number of data points to keep the graph from growing indefinitely
+        if chartData.data.count > 20 {
+            chartData.data.removeFirst()
+        }
+    }
 }
+
 
 struct ContentView2_Previews: PreviewProvider {
     static var previews: some View {

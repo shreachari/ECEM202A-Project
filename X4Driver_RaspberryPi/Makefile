@@ -51,7 +51,7 @@ _build/%.o: %.c Makefile
 	$(GCC) ${C_FLAGS} ${INCLUDES} ${CREATE_DEPS} -c $< -o $@
 
 Runme: $(OBJECTS)
-	${GXX} $^ -o $@ ${TARGET_LIB_LINKER_ARGS} -lpthread -lwiringPi
+	${GXX} $^ -o $@ ${TARGET_LIB_LINKER_ARGS} -lpthread -lwiringPi -lzmq
 
 .PHONY: clean
 clean:
