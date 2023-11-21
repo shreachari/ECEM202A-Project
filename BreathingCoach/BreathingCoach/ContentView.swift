@@ -23,7 +23,7 @@ struct ContentView: View {
                         .frame(height: 450)
                     
                     
-                    NavigationLink(destination: ContentView2()) {
+                    NavigationLink(destination: BoxBreathingHome()) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(height: 44) // Adjust the height as needed
