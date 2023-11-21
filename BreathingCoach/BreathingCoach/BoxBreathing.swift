@@ -11,10 +11,12 @@ class ChartData: ObservableObject {
 
 struct BoxBreathing: View {
     @State private var countdown = 10
+    @State var breathingCountdown = 4
     @State private var breathingText = "Inhale"
     @State private var breathingVal = 1
     @State private var timer: Timer?
     @State private var isBreathing = false
+    var breathingCountdownTimer: Timer?
     // CHANGE
     @State private var totalTime = 60
     @State private var showThankYou = false
@@ -33,16 +35,22 @@ struct BoxBreathing: View {
                     .font(.system(size: 108))
                     .bold()
                     .onAppear {
-                        startCountdownTimer()
+                        startInitialCountdownTimer()
                     }
             } else if isBreathing && totalTime > 0 {
                 VStack {
-                    Text(breathingText)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .onAppear {
-                            startBreathingTimer()
-                        }
+                    HStack{
+                        Text("\(breathingText) \(breathingCountdown)")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .onAppear {
+                                startBreathingTimer()
+                                startCountdownTimer()
+                            }
+                            .onDisappear {
+                                stopCountdownTimer()
+                            }
+                    }
                     if(!displayWaveforms) {
                         Button("Display Waveforms") {
                             displayWaveforms = true
@@ -133,7 +141,7 @@ struct BoxBreathing: View {
         }
     }
 
-    func startCountdownTimer() {
+    func startInitialCountdownTimer() {
         zmqSubscriber.connectAndCollectSensorData()
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             if countdown > 0 {
@@ -144,7 +152,7 @@ struct BoxBreathing: View {
             }
         }
     }
-
+    
     func startBreathingTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 4, repeats: true) { timer in
             if totalTime > 0 {
@@ -152,11 +160,24 @@ struct BoxBreathing: View {
                 totalTime -= 4
             } else {
                 timer.invalidate()
-                zmqSubscriber.disconnectFromSensor()
                 showThankYou = true
             }
         }
     }
+    
+    func startCountdownTimer() {
+            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+                if self.breathingCountdown > 1 {
+                    self.breathingCountdown -= 1
+                } else {
+                    self.breathingCountdown = 4
+                }
+            }
+        }
+    
+    func stopCountdownTimer() {
+            breathingCountdownTimer?.invalidate()
+        }
 
     func updateBreathingText() {
         switch breathingVal {
