@@ -17,7 +17,6 @@ struct BoxBreathing: View {
     @State private var breathingVal = 1
     @State private var timer: Timer?
     @State private var isBreathing = false
-    var breathingCountdownTimer: Timer?
     @State private var expectedElement = 0
     // CHANGE
     @State private var totalTime = 15
@@ -48,9 +47,6 @@ struct BoxBreathing: View {
                             .onAppear {
                                 startBreathingTimer()
                                 startCountdownTimer()
-                            }
-                            .onDisappear {
-                                stopCountdownTimer()
                             }
                     }
                     if(!displayWaveforms) {
@@ -177,10 +173,6 @@ struct BoxBreathing: View {
                     self.breathingCountdown = 4
                 }
             }
-        }
-    
-    func stopCountdownTimer() {
-            breathingCountdownTimer?.invalidate()
         }
 
     func updateBreathingText() {

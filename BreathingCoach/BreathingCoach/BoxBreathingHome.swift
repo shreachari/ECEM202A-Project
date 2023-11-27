@@ -12,10 +12,7 @@ struct BoxBreathingHome: View {
     "Setup Instructions:\n" +
     "Sit straight and place the sensor device aligned to your chest at a 1 meter distance."
     
-    @State private var sensorDataText = "Sensor data goes here...\n\n"
-    
 
-    
     var body: some View {
         ZStack{
             Color.mint.edgesIgnoringSafeArea(.all)
