@@ -18,6 +18,7 @@ struct BoxBreathing: View {
     @State private var timer: Timer?
     @State private var isBreathing = false
     var breathingCountdownTimer: Timer?
+    @State private var expectedElement = 0
     // CHANGE
     @State private var totalTime = 15
     @State private var showThankYou = false
@@ -98,7 +99,7 @@ struct BoxBreathing: View {
                                 y: .value("Magnitude", magnitude)
                             )
                         }
-                        .chartYScale(domain: [-0.001, 0.01])
+                        .chartYScale(domain: [-0.001, 0.015])
                         .chartXAxis(.hidden)
                         .foregroundColor(.blue)
                         .chartPlotStyle { plotArea in
@@ -106,7 +107,8 @@ struct BoxBreathing: View {
                         }
                         .onAppear {
                             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
-                                let newDataPoint = Float.random(in: -0.001...0.01)
+                                let newDataPoint = (self.expectedElement >= ExpectedBreathing.Box.count) ? Float(0.0): ExpectedBreathing.Box[expectedElement]
+                                self.expectedElement += 1
                                 self.updateRealTimeData(dataToUpdate: expectedData, with: newDataPoint)
                             }
                         }
