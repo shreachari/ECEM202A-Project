@@ -3,12 +3,17 @@ import matplotlib.pyplot as plt
 
 box_breathing_array = []
 
-def generate_inhale_values(duration=4, interval=0.1, initial_value=0, slope=50):
+# May want to play around with these slopes
+inhale_slope = 50
+exhale_slope = 50
+
+# May want to play around with initial value
+def generate_inhale_values(duration=4, interval=0.1, initial_value=0.0025):
     current_value = initial_value
     start_time = time.time()
 
     while time.time() - start_time <= duration:
-        current_value += slope * interval
+        current_value += inhale_slope * interval
         box_breathing_array.append(current_value)
         time.sleep(interval)
 
@@ -20,12 +25,12 @@ def generate_hold_values(duration=4, interval=0.1):
 		box_breathing_array.append(current_value)
 		time.sleep(interval)
 
-def generate_exhale_values(duration=4, interval=0.1, slope=50):
+def generate_exhale_values(duration=4, interval=0.1):
 	current_value = box_breathing_array[-1]
 	start_time = time.time()
 
 	while time.time() - start_time <= duration:
-		current_value -= slope * interval
+		current_value -= exhale_slope * interval
 		box_breathing_array.append(current_value)
 		time.sleep(interval)
 
@@ -48,5 +53,11 @@ plt.xlabel('Index')
 plt.ylabel('Value')
 plt.title('Box Plot')
 plt.show()
+
+# Open a file for writing
+with open('output2.txt', 'w') as file:
+    # Iterate through the array and write each element to the file
+    for element in box_breathing_array:
+        file.write(str(element) + ', ')
 
 

@@ -19,7 +19,7 @@ struct BoxBreathing: View {
     @State private var isBreathing = false
     @State private var expectedElement = 0
     // CHANGE
-    @State private var totalTime = 15
+    @State private var totalTime = 120
     @State private var showThankYou = false
     @State private var displayWaveforms = false
     
@@ -95,7 +95,7 @@ struct BoxBreathing: View {
                                 y: .value("Magnitude", magnitude)
                             )
                         }
-                        .chartYScale(domain: [-0.001, 0.015])
+                        .chartYScale(domain: [0, 200])
                         .chartXAxis(.hidden)
                         .foregroundColor(.blue)
                         .chartPlotStyle { plotArea in
