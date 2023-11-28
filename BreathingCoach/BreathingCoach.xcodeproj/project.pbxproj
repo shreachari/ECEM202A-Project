@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		3999039D59308D6AB60EF868 /* Pods_BreathingCoachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2A7E175F5EE2DD81BA96F1 /* Pods_BreathingCoachTests.framework */; };
 		614722B02B01795700C1888E /* ZeroMQSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614722AF2B01795700C1888E /* ZeroMQSubscriber.swift */; };
+		61CA88602B16A7D40015BF11 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CA885F2B16A7D40015BF11 /* AppColors.swift */; };
 		61E1ADA82B0C5BFE00BE1891 /* BoxBreathing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E1ADA72B0C5BFE00BE1891 /* BoxBreathing.swift */; };
 		9BE80F8F40424F197536E3BB /* Pods_BreathingCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233E7506D31EC2F0C4CBEED1 /* Pods_BreathingCoach.framework */; };
 		A7048D852AEC573700249B37 /* BreathingCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D842AEC573700249B37 /* BreathingCoachApp.swift */; };
-		A7048D872AEC573700249B37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D862AEC573700249B37 /* ContentView.swift */; };
+		A7048D872AEC573700249B37 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D862AEC573700249B37 /* HomePage.swift */; };
 		A7048D892AEC573800249B37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7048D882AEC573800249B37 /* Assets.xcassets */; };
 		A7048D8C2AEC573800249B37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7048D8B2AEC573800249B37 /* Preview Assets.xcassets */; };
 		A7048D962AEC573800249B37 /* BreathingCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D952AEC573800249B37 /* BreathingCoachTests.swift */; };
 		A7048DA02AEC573800249B37 /* BreathingCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D9F2AEC573800249B37 /* BreathingCoachUITests.swift */; };
 		A7048DA22AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048DA12AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift */; };
-		A7048DAF2AEC8F8C00249B37 /* ContentViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048DAE2AEC8F8C00249B37 /* ContentViewHelper.swift */; };
 		A7266B392B0D1EDF00A4C642 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7266B382B0D1EDF00A4C642 /* Menu.swift */; };
 		A78C418C2B004573002FE5F8 /* BoxBreathingHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C418B2B004573002FE5F8 /* BoxBreathingHome.swift */; };
 		BA087F8AD52CED71BA658744 /* Pods_BreathingCoach_BreathingCoachUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4907471F8DE2FDC2DA88CE6 /* Pods_BreathingCoach_BreathingCoachUITests.framework */; };
@@ -48,10 +48,11 @@
 		403C28DC266C0EFA1EEF7B26 /* Pods-BreathingCoach-BreathingCoachUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathingCoach-BreathingCoachUITests.release.xcconfig"; path = "Target Support Files/Pods-BreathingCoach-BreathingCoachUITests/Pods-BreathingCoach-BreathingCoachUITests.release.xcconfig"; sourceTree = "<group>"; };
 		58D64912B212EC57BE9DDE1A /* Pods-BreathingCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathingCoach.debug.xcconfig"; path = "Target Support Files/Pods-BreathingCoach/Pods-BreathingCoach.debug.xcconfig"; sourceTree = "<group>"; };
 		614722AF2B01795700C1888E /* ZeroMQSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroMQSubscriber.swift; sourceTree = "<group>"; };
+		61CA885F2B16A7D40015BF11 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		61E1ADA72B0C5BFE00BE1891 /* BoxBreathing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBreathing.swift; sourceTree = "<group>"; };
 		A7048D812AEC573700249B37 /* BreathingCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathingCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7048D842AEC573700249B37 /* BreathingCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachApp.swift; sourceTree = "<group>"; };
-		A7048D862AEC573700249B37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7048D862AEC573700249B37 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		A7048D882AEC573800249B37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7048D8B2AEC573800249B37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7048D912AEC573800249B37 /* BreathingCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreathingCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +60,6 @@
 		A7048D9B2AEC573800249B37 /* BreathingCoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreathingCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7048D9F2AEC573800249B37 /* BreathingCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachUITests.swift; sourceTree = "<group>"; };
 		A7048DA12AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A7048DAE2AEC8F8C00249B37 /* ContentViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHelper.swift; sourceTree = "<group>"; };
 		A7266B382B0D1EDF00A4C642 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		A78C418B2B004573002FE5F8 /* BoxBreathingHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBreathingHome.swift; sourceTree = "<group>"; };
 		B1B73F32CFFA8C467008CF03 /* Pods-BreathingCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathingCoachTests.release.xcconfig"; path = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,14 +145,14 @@
 			isa = PBXGroup;
 			children = (
 				A7048D842AEC573700249B37 /* BreathingCoachApp.swift */,
-				A7048D862AEC573700249B37 /* ContentView.swift */,
+				A7048D862AEC573700249B37 /* HomePage.swift */,
 				A7048D882AEC573800249B37 /* Assets.xcassets */,
 				A7048D8A2AEC573800249B37 /* Preview Content */,
-				A7048DAE2AEC8F8C00249B37 /* ContentViewHelper.swift */,
 				614722AF2B01795700C1888E /* ZeroMQSubscriber.swift */,
 				A78C418B2B004573002FE5F8 /* BoxBreathingHome.swift */,
 				61E1ADA72B0C5BFE00BE1891 /* BoxBreathing.swift */,
 				A7266B382B0D1EDF00A4C642 /* Menu.swift */,
+				61CA885F2B16A7D40015BF11 /* AppColors.swift */,
 			);
 			path = BreathingCoach;
 			sourceTree = "<group>";
@@ -420,13 +420,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7048D872AEC573700249B37 /* ContentView.swift in Sources */,
+				A7048D872AEC573700249B37 /* HomePage.swift in Sources */,
 				614722B02B01795700C1888E /* ZeroMQSubscriber.swift in Sources */,
 				A7266B392B0D1EDF00A4C642 /* Menu.swift in Sources */,
+				61CA88602B16A7D40015BF11 /* AppColors.swift in Sources */,
 				A78C418C2B004573002FE5F8 /* BoxBreathingHome.swift in Sources */,
 				A7048D852AEC573700249B37 /* BreathingCoachApp.swift in Sources */,
 				61E1ADA82B0C5BFE00BE1891 /* BoxBreathing.swift in Sources */,
-				A7048DAF2AEC8F8C00249B37 /* ContentViewHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
