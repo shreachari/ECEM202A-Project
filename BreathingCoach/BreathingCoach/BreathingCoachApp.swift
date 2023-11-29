@@ -4,7 +4,7 @@ import SwiftUI
 struct BreathingCoachApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomePage()
         }
     }
 }

@@ -29,11 +29,12 @@ struct BoxBreathing: View {
 
     var body: some View {
         ZStack{
-            Color.mint.edgesIgnoringSafeArea(.all)
+            K.AppColors.appLightYellow.edgesIgnoringSafeArea(.all)
             
             if countdown > 0 {
                 Text("\(countdown)")
                     .font(.system(size: 108))
+                    .foregroundColor(K.AppColors.appDarkBlue)
                     .bold()
                     .onAppear {
                         startInitialCountdownTimer()
@@ -44,6 +45,7 @@ struct BoxBreathing: View {
                         Text("\(breathingText) \(breathingCountdown)")
                             .font(.title)
                             .fontWeight(.bold)
+                            .foregroundColor(K.AppColors.appDarkBlue)
                             .onAppear {
                                 startBreathingTimer()
                                 startCountdownTimer()
@@ -54,17 +56,19 @@ struct BoxBreathing: View {
                             displayWaveforms = true
                         }
                         .padding()
-                        .background(Color.black)
+                        .background(K.AppColors.appLightBlue)
+                        .fontWeight(.bold)
                         .cornerRadius(40)
-                        .foregroundColor(.white)
+                        .foregroundColor(K.AppColors.appDarkBlue)
                     } else {
                         Button("Hide Waveforms") {
                             displayWaveforms = false
                         }
                         .padding()
-                        .background(Color.black)
+                        .background(K.AppColors.appLightBlue)
+                        .fontWeight(.bold)
                         .cornerRadius(40)
-                        .foregroundColor(.white)
+                        .foregroundColor(K.AppColors.appDarkBlue)
                         
                         Chart(Array(realTimeData.data.enumerated()), id: \.0) { index, magnitude in
                             LineMark(
@@ -120,15 +124,16 @@ struct BoxBreathing: View {
                     Text("You have completed the box breathing exercise. Good job!")
                         .font(.title)
                         .fontWeight(.bold)
+                        .foregroundColor(K.AppColors.appDarkBlue)
                     
                     NavigationLink(destination: Menu()) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(height: 44) // Adjust the height as needed
-                                .foregroundColor(Color.yellow)
+                                .foregroundColor(K.AppColors.appDarkYellow)
                             
                             Text("Return to Menu")
-                                .foregroundColor(Color.black)
+                                .foregroundColor(K.AppColors.appDarkBlue)
                                 .font(.headline)
                                 .fontWeight(.heavy)
                                 .bold()

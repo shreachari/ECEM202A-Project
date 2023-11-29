@@ -1,23 +1,23 @@
 import SwiftUI
 import SwiftyZeroMQ
 
-struct ContentView: View {
+struct HomePage: View {
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             
             ZStack{
-                Color.indigo.edgesIgnoringSafeArea(.all)
+                K.AppColors.appLightYellow.edgesIgnoringSafeArea(.all)
                 
                 VStack(alignment: .center) {
                     Text("Breathing Coach")
                         .font(.title)
                         .fontWeight(.heavy)
-                        .foregroundColor(Color.orange)
+                        .foregroundColor(K.AppColors.appDarkBlue)
                         .multilineTextAlignment(.leading)
                         .lineLimit(1)
                     //Image
-                    Image("Meditation")
+                    Image("Icon")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 450)
@@ -27,10 +27,10 @@ struct ContentView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(height: 44) // Adjust the height as needed
-                                .foregroundColor(Color.yellow)
+                                .foregroundColor(K.AppColors.appDarkYellow)
                             
-                            Text("SELECT EXERCISE!")
-                                .foregroundColor(Color.black)
+                            Text("Get Started")
+                                .foregroundColor(K.AppColors.appDarkBlue)
                                 .font(.headline)
                                 .fontWeight(.heavy)
                                 .bold()
@@ -47,6 +47,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomePage()
     }
 }
