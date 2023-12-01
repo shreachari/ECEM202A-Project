@@ -20,6 +20,7 @@
 		A7048DA02AEC573800249B37 /* BreathingCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048D9F2AEC573800249B37 /* BreathingCoachUITests.swift */; };
 		A7048DA22AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7048DA12AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift */; };
 		A7266B392B0D1EDF00A4C642 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7266B382B0D1EDF00A4C642 /* Menu.swift */; };
+		A7266B3B2B14097800A4C642 /* ExpectedBreathing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7266B3A2B14097800A4C642 /* ExpectedBreathing.swift */; };
 		A78C418C2B004573002FE5F8 /* BoxBreathingHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C418B2B004573002FE5F8 /* BoxBreathingHome.swift */; };
 		BA087F8AD52CED71BA658744 /* Pods_BreathingCoach_BreathingCoachUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4907471F8DE2FDC2DA88CE6 /* Pods_BreathingCoach_BreathingCoachUITests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		A7048D9F2AEC573800249B37 /* BreathingCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachUITests.swift; sourceTree = "<group>"; };
 		A7048DA12AEC573800249B37 /* BreathingCoachUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingCoachUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A7266B382B0D1EDF00A4C642 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		A7266B3A2B14097800A4C642 /* ExpectedBreathing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectedBreathing.swift; sourceTree = "<group>"; };
 		A78C418B2B004573002FE5F8 /* BoxBreathingHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBreathingHome.swift; sourceTree = "<group>"; };
 		B1B73F32CFFA8C467008CF03 /* Pods-BreathingCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathingCoachTests.release.xcconfig"; path = "Target Support Files/Pods-BreathingCoachTests/Pods-BreathingCoachTests.release.xcconfig"; sourceTree = "<group>"; };
 		B4907471F8DE2FDC2DA88CE6 /* Pods_BreathingCoach_BreathingCoachUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathingCoach_BreathingCoachUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 				A78C418B2B004573002FE5F8 /* BoxBreathingHome.swift */,
 				61E1ADA72B0C5BFE00BE1891 /* BoxBreathing.swift */,
 				A7266B382B0D1EDF00A4C642 /* Menu.swift */,
+				A7266B3A2B14097800A4C642 /* ExpectedBreathing.swift */,
 				61CA885F2B16A7D40015BF11 /* AppColors.swift */,
 			);
 			path = BreathingCoach;
@@ -420,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7266B3B2B14097800A4C642 /* ExpectedBreathing.swift in Sources */,
 				A7048D872AEC573700249B37 /* HomePage.swift in Sources */,
 				614722B02B01795700C1888E /* ZeroMQSubscriber.swift in Sources */,
 				A7266B392B0D1EDF00A4C642 /* Menu.swift in Sources */,

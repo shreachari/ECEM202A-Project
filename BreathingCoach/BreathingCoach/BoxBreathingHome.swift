@@ -12,7 +12,6 @@ struct BoxBreathingHome: View {
     "Setup Instructions:\n" +
     "Sit up straight and align the sensor to your chest at a 1 meter distance."
 
-    
     var body: some View {
         ZStack{
             K.AppColors.appLightBlue.edgesIgnoringSafeArea(.all)
