@@ -26,6 +26,7 @@ struct BoxBreathing: View {
     let zmqSubscriber = ZeroMQSubscriber(text: .constant(""))
     @ObservedObject var realTimeData: ChartData = ChartData(data: Array(repeating: 0.0, count: 20))
     @ObservedObject var expectedData: ChartData = ChartData(data: Array(repeating: 0.0, count: 20))
+    @State private var yAxisDomain: ClosedRange<Double> = -0.001...0.01
 
     var body: some View {
         ZStack{
@@ -76,7 +77,7 @@ struct BoxBreathing: View {
                                 y: .value("Magnitude", magnitude)
                             )
                         }
-                        .chartYScale(domain: [-0.001, 0.01])
+                        .chartYScale(domain: yAxisDomain)
                         .chartXAxis(.hidden)
                         .foregroundColor(.red)
                         .chartPlotStyle { plotArea in
@@ -109,7 +110,7 @@ struct BoxBreathing: View {
                             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
                                 let newDataPoint = (self.expectedElement >= ExpectedBreathing.Box.count) ? Float(0.0): ExpectedBreathing.Box[expectedElement]
                                 self.expectedElement += 1
-                                self.updateRealTimeData(dataToUpdate: expectedData, with: newDataPoint)
+                                self.updateExpectedData(dataToUpdate: expectedData, with: newDataPoint)
                             }
                         }
                         
@@ -206,6 +207,30 @@ struct BoxBreathing: View {
         if dataToUpdate.data.count > 20 {
             dataToUpdate.data.removeFirst()
         }
+        
+        // Update yAxisDomain based on your real-time data
+        if Double(newDataPoint) > yAxisDomain.upperBound {
+            let minY = yAxisDomain.lowerBound
+            let maxY = Double(newDataPoint)
+            yAxisDomain = minY...maxY + 0.001 // Adjust for padding
+        } else if Double(newDataPoint) < yAxisDomain.lowerBound {
+            let minY = Double(newDataPoint)
+            let maxY = yAxisDomain.upperBound
+            yAxisDomain = minY - 0.001...maxY // Adjust for padding
+        }
+        print("Y axis domain: to ")
+        
+    }
+    
+    private func updateExpectedData(dataToUpdate: ChartData, with newDataPoint: Float){
+        
+        // Update the @Published property, triggering a refresh of the UI
+        dataToUpdate.data.append(newDataPoint)
+
+        if dataToUpdate.data.count > 20 {
+            dataToUpdate.data.removeFirst()
+        }
+        
     }
 }
 
