@@ -24,8 +24,8 @@ struct BoxBreathing: View {
     @State private var displayWaveforms = false
     
     let zmqSubscriber = ZeroMQSubscriber(text: .constant(""))
-    @ObservedObject var realTimeData: ChartData = ChartData(data: Array(repeating: 0.0, count: 20))
-    @ObservedObject var expectedData: ChartData = ChartData(data: Array(repeating: 0.0, count: 20))
+    @ObservedObject var realTimeData: ChartData = ChartData(data: Array(repeating: 0.0, count: 50))
+    @ObservedObject var expectedData: ChartData = ChartData(data: Array(repeating: 0.0, count: 50))
     @State private var yAxisDomain: ClosedRange<Double> = -0.001...0.01
 
     var body: some View {
@@ -204,7 +204,7 @@ struct BoxBreathing: View {
         // Update the @Published property, triggering a refresh of the UI
         dataToUpdate.data.append(newDataPoint)
 
-        if dataToUpdate.data.count > 20 {
+        if dataToUpdate.data.count > 50 {
             dataToUpdate.data.removeFirst()
         }
         
@@ -227,7 +227,7 @@ struct BoxBreathing: View {
         // Update the @Published property, triggering a refresh of the UI
         dataToUpdate.data.append(newDataPoint)
 
-        if dataToUpdate.data.count > 20 {
+        if dataToUpdate.data.count > 50 {
             dataToUpdate.data.removeFirst()
         }
         
