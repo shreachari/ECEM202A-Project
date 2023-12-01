@@ -10,7 +10,6 @@ class ChartData: ObservableObject {
 }
 
 struct BoxBreathing: View {
-    //CHANGE
     @State private var countdown = 3
     @State var breathingCountdown = 4
     @State private var breathingText = "Inhale"
@@ -18,10 +17,10 @@ struct BoxBreathing: View {
     @State private var timer: Timer?
     @State private var isBreathing = false
     @State private var expectedElement = 0
-    // CHANGE
     @State private var totalTime = 120
     @State private var showThankYou = false
-    @State private var displayWaveforms = false
+    @State private var displayWaveforms = true
+    @State private var windowSize = 3
     
     let zmqSubscriber = ZeroMQSubscriber(text: .constant(""))
     @ObservedObject var realTimeData: ChartData = ChartData(data: Array(repeating: 0.0, count: 50))
@@ -201,9 +200,16 @@ struct BoxBreathing: View {
     }
     
     private func updateRealTimeData(dataToUpdate: ChartData, with newDataPoint: Float) {
-        // Update the @Published property, triggering a refresh of the UI
-        dataToUpdate.data.append(newDataPoint)
-
+        var movingAvg = newDataPoint
+        
+        if dataToUpdate.data[dataToUpdate.data.count-windowSize] != Float(0) {
+            var data: [Float] = dataToUpdate.data.suffix(windowSize-1)
+            data.append(newDataPoint)
+            movingAvg = calculateMovingAverage(data: data, windowSize: windowSize)
+        }
+        print(movingAvg)
+        dataToUpdate.data.append(movingAvg)
+        
         if dataToUpdate.data.count > 50 {
             dataToUpdate.data.removeFirst()
         }
@@ -218,8 +224,12 @@ struct BoxBreathing: View {
             let maxY = yAxisDomain.upperBound
             yAxisDomain = minY - 0.001...maxY // Adjust for padding
         }
-        print("Y axis domain: to ")
-        
+    }
+    
+    private func calculateMovingAverage(data: [Float], windowSize: Int) -> Float {
+        let sum = data.reduce(0, +)
+        let average = sum / Float(windowSize)
+        return average
     }
     
     private func updateExpectedData(dataToUpdate: ChartData, with newDataPoint: Float){
