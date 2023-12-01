@@ -27,6 +27,12 @@ struct BoxBreathing: View {
     @ObservedObject var realTimeData: ChartData = ChartData(data: Array(repeating: 0.0, count: 50))
     @ObservedObject var expectedData: ChartData = ChartData(data: Array(repeating: 0.0, count: 50))
     @State private var yAxisDomain: ClosedRange<Double> = -0.001...0.01
+    
+    // update
+    private var hold_threshold = 0.0025
+    private var inhale_slope = 0.0025
+    private var exhale_slope = -0.00015
+    private var slope_var_per = 0.75
 
     var body: some View {
         ZStack{
@@ -50,6 +56,7 @@ struct BoxBreathing: View {
                             .onAppear {
                                 startBreathingTimer()
                                 startCountdownTimer()
+                                startErrorCheckTimer()
                             }
                     }
                     if(!displayWaveforms) {
@@ -181,6 +188,54 @@ struct BoxBreathing: View {
             }
         }
 
+    func startErrorCheckTimer() {
+        var initial = Float(0)
+        var final = Float(0)
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            if self.breathingCountdown == 3 {
+                initial = realTimeData.data.last ?? Float(0)
+            }
+            if self.breathingCountdown == 1 {
+                final = realTimeData.data.last ?? Float(0)
+                checkData(initial: Double(initial), final: Double(final), step: breathingVal)
+            }
+        }
+    }
+    
+    func checkData(initial: Double, final: Double, step: Int){
+        let slope = (final - initial)/20
+        switch breathingVal {
+        case 1:
+            //inhale (check slope)
+            if abs(slope - inhale_slope) > abs(slope_var_per * inhale_slope) {
+                if slope < inhale_slope {
+                    print("please inhale more deeply")
+                }else {
+                    print("please slow down inhale")
+                }
+            }
+        case 3:
+            //exhale (check slope)
+            if abs(slope - exhale_slope) > abs(slope_var_per * exhale_slope) {
+                if slope > exhale_slope {
+                    print("please exhale more deeply")
+                }else {
+                    print("please slow down exhale")
+                }
+            }
+        case 2:
+            //hold
+            fallthrough
+        case 4:
+            //hold (check threshold)
+            if abs(final - initial) > hold_threshold {
+                print("please hold breathing")
+            }
+        default:
+            break
+        }
+    }
+    
     func updateBreathingText() {
         switch breathingVal {
         case 1:
@@ -218,7 +273,6 @@ struct BoxBreathing: View {
             let maxY = yAxisDomain.upperBound
             yAxisDomain = minY - 0.001...maxY // Adjust for padding
         }
-        print("Y axis domain: to ")
         
     }
     
