@@ -262,7 +262,6 @@ struct BoxBreathing: View {
             data.append(newDataPoint)
             movingAvg = calculateMovingAverage(data: data, windowSize: windowSize)
         }
-        print(movingAvg)
         dataToUpdate.data.append(movingAvg)
         
         if dataToUpdate.data.count > 50 {
