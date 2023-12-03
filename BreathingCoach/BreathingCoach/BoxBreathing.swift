@@ -178,11 +178,15 @@ struct BoxBreathing: View {
     }
     
     func startCountdownTimer() {
-            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
                 if self.breathingCountdown > 1 {
                     self.breathingCountdown -= 1
                 } else {
                     self.breathingCountdown = 4
+                }
+                
+                if totalTime < 0 {
+                    timer.invalidate()
                 }
             }
         }
@@ -197,6 +201,10 @@ struct BoxBreathing: View {
             if self.breathingCountdown == 1 {
                 final = realTimeData.data.last ?? Float(0)
                 checkData(initial: Double(initial), final: Double(final), step: breathingVal)
+            }
+            
+            if totalTime < 0 {
+                timer.invalidate()
             }
         }
     }
