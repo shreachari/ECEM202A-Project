@@ -106,7 +106,7 @@ struct BoxBreathing: View {
                                 y: .value("Magnitude", magnitude)
                             )
                         }
-                        .chartYScale(domain: [0, 200])
+                        .chartYScale(domain: [0, 201])
                         .chartXAxis(.hidden)
                         .foregroundColor(.blue)
                         .chartPlotStyle { plotArea in
