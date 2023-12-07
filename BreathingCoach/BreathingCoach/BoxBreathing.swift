@@ -1,5 +1,6 @@
 import SwiftUI
 import Charts
+import AVFoundation
 
 class ChartData: ObservableObject {
     @Published var data: [Float]
@@ -26,6 +27,8 @@ struct BoxBreathing: View {
     @ObservedObject var realTimeData: ChartData = ChartData(data: Array(repeating: 0.0, count: 50))
     @ObservedObject var expectedData: ChartData = ChartData(data: Array(repeating: 0.0, count: 50))
     @State private var yAxisDomain: ClosedRange<Double> = -0.001...0.01
+    
+    let speechSynthesizer = AVSpeechSynthesizer()
     
     // update
     private var hold_threshold = 0.0025
@@ -84,8 +87,9 @@ struct BoxBreathing: View {
                             )
                         }
                         .chartYScale(domain: yAxisDomain)
+                        .chartYAxis(.hidden)
                         .chartXAxis(.hidden)
-                        .foregroundColor(.red)
+                        .foregroundColor(K.AppColors.appDarkBlue)
                         .chartPlotStyle { plotArea in
                             plotArea.background(.white.opacity(0.4))
                         }
@@ -97,7 +101,8 @@ struct BoxBreathing: View {
                         }
                         
                         Text("Your Breathing Pattern")
-                            .foregroundColor(.red)
+                            .foregroundColor(K.AppColors.appDarkBlue)
+                            .fontWeight(.bold)
                             .font(.body)
                         
                         Chart(Array(expectedData.data.enumerated()), id: \.0) { index, magnitude in
@@ -107,8 +112,9 @@ struct BoxBreathing: View {
                             )
                         }
                         .chartYScale(domain: [0, 201])
+                        .chartYAxis(.hidden)
                         .chartXAxis(.hidden)
-                        .foregroundColor(.blue)
+                        .foregroundColor(K.AppColors.appDarkGreen)
                         .chartPlotStyle { plotArea in
                             plotArea.background(.white.opacity(0.4))
                         }
@@ -121,7 +127,8 @@ struct BoxBreathing: View {
                         }
                         
                         Text("Goal Breathing Pattern")
-                            .foregroundColor(.blue)
+                            .foregroundColor(K.AppColors.appDarkGreen)
+                            .fontWeight(.bold)
                             .font(.body)
                     }
                 }
@@ -217,8 +224,10 @@ struct BoxBreathing: View {
             if abs(slope - inhale_slope) > abs(slope_var_per * inhale_slope) {
                 if slope < inhale_slope {
                     print("please inhale more deeply")
+                    speak("please inhale more deeply")
                 }else {
                     print("please slow down inhale")
+                    speak("please slow down inhale")
                 }
             }
         case 3:
@@ -226,8 +235,10 @@ struct BoxBreathing: View {
             if abs(slope - exhale_slope) > abs(slope_var_per * exhale_slope) {
                 if slope > exhale_slope {
                     print("please exhale more deeply")
+                    speak("please exhale more deeply")
                 }else {
                     print("please slow down exhale")
+                    speak("please slow down exhale")
                 }
             }
         case 2:
@@ -237,6 +248,7 @@ struct BoxBreathing: View {
             //hold (check threshold)
             if abs(final - initial) > hold_threshold {
                 print("please hold breathing")
+                speak("please hold breathing")
             }
         default:
             break
@@ -304,6 +316,14 @@ struct BoxBreathing: View {
             dataToUpdate.data.removeFirst()
         }
         
+    }
+    
+    func speak(_ message: String) {
+        let speechUtterance = AVSpeechUtterance(string: message)
+        speechUtterance.rate = AVSpeechUtteranceDefaultSpeechRate
+        speechUtterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.speech.synthesis.voice.Fred")
+
+        speechSynthesizer.speak(speechUtterance)
     }
 }
 
