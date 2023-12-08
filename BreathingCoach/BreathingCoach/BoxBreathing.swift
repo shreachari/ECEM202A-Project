@@ -1,5 +1,6 @@
 import SwiftUI
 import Charts
+import AVFoundation
 
 class ChartData: ObservableObject {
     @Published var data: [Float]
@@ -26,6 +27,14 @@ struct BoxBreathing: View {
     @ObservedObject var realTimeData: ChartData = ChartData(data: Array(repeating: 0.0, count: 50))
     @ObservedObject var expectedData: ChartData = ChartData(data: Array(repeating: 0.0, count: 50))
     @State private var yAxisDomain: ClosedRange<Double> = -0.001...0.01
+    
+    let speechSynthesizer = AVSpeechSynthesizer()
+    
+    // update
+    private var hold_threshold = 0.0025
+    private var inhale_slope = 0.0015//0.0025
+    private var exhale_slope = -0.0015//-0.00015
+    private var slope_var_per = 0.75
 
     var body: some View {
         ZStack{
@@ -49,6 +58,7 @@ struct BoxBreathing: View {
                             .onAppear {
                                 startBreathingTimer()
                                 startCountdownTimer()
+                                startErrorCheckTimer()
                             }
                     }
                     if(!displayWaveforms) {
@@ -77,8 +87,9 @@ struct BoxBreathing: View {
                             )
                         }
                         .chartYScale(domain: yAxisDomain)
+                        .chartYAxis(.hidden)
                         .chartXAxis(.hidden)
-                        .foregroundColor(.red)
+                        .foregroundColor(K.AppColors.appDarkBlue)
                         .chartPlotStyle { plotArea in
                             plotArea.background(.white.opacity(0.4))
                         }
@@ -90,7 +101,8 @@ struct BoxBreathing: View {
                         }
                         
                         Text("Your Breathing Pattern")
-                            .foregroundColor(.red)
+                            .foregroundColor(K.AppColors.appDarkBlue)
+                            .fontWeight(.bold)
                             .font(.body)
                         
                         Chart(Array(expectedData.data.enumerated()), id: \.0) { index, magnitude in
@@ -99,9 +111,10 @@ struct BoxBreathing: View {
                                 y: .value("Magnitude", magnitude)
                             )
                         }
-                        .chartYScale(domain: [0, 200])
+                        .chartYScale(domain: [0, 201])
+                        .chartYAxis(.hidden)
                         .chartXAxis(.hidden)
-                        .foregroundColor(.blue)
+                        .foregroundColor(K.AppColors.appDarkGreen)
                         .chartPlotStyle { plotArea in
                             plotArea.background(.white.opacity(0.4))
                         }
@@ -114,7 +127,8 @@ struct BoxBreathing: View {
                         }
                         
                         Text("Goal Breathing Pattern")
-                            .foregroundColor(.blue)
+                            .foregroundColor(K.AppColors.appDarkGreen)
+                            .fontWeight(.bold)
                             .font(.body)
                     }
                 }
@@ -171,15 +185,76 @@ struct BoxBreathing: View {
     }
     
     func startCountdownTimer() {
-            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
                 if self.breathingCountdown > 1 {
                     self.breathingCountdown -= 1
                 } else {
                     self.breathingCountdown = 4
                 }
+                
+                if totalTime <= 0 {
+                    timer.invalidate()
+                }
             }
         }
 
+    func startErrorCheckTimer() {
+        var initial = Float(0)
+        var final = Float(0)
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            if self.breathingCountdown == 3 {
+                initial = realTimeData.data.last ?? Float(0)
+            }
+            if self.breathingCountdown == 1 {
+                final = realTimeData.data.last ?? Float(0)
+                checkData(initial: Double(initial), final: Double(final), step: breathingVal)
+            }
+            
+            if totalTime <= 0 {
+                timer.invalidate()
+            }
+        }
+    }
+    
+    func checkData(initial: Double, final: Double, step: Int){
+        let slope = (final - initial)/20
+        switch breathingVal {
+        case 1:
+            //inhale (check slope)
+            if abs(slope - inhale_slope) > abs(slope_var_per * inhale_slope) {
+                if slope < inhale_slope {
+                    print("please inhale more deeply")
+                    speak("please inhale more deeply")
+                }else {
+                    print("please slow down inhale")
+                    speak("please slow down inhale")
+                }
+            }
+        case 3:
+            //exhale (check slope)
+            if abs(slope - exhale_slope) > abs(slope_var_per * exhale_slope) {
+                if slope > exhale_slope {
+                    print("please exhale more deeply")
+                    speak("please exhale more deeply")
+                }else {
+                    print("please slow down exhale")
+                    speak("please slow down exhale")
+                }
+            }
+        case 2:
+            //hold
+            fallthrough
+        case 4:
+            //hold (check threshold)
+            if abs(final - initial) > hold_threshold {
+                print("please hold breathing")
+                speak("please hold breathing")
+            }
+        default:
+            break
+        }
+    }
+    
     func updateBreathingText() {
         switch breathingVal {
         case 1:
@@ -207,7 +282,6 @@ struct BoxBreathing: View {
             data.append(newDataPoint)
             movingAvg = calculateMovingAverage(data: data, windowSize: windowSize)
         }
-        print(movingAvg)
         dataToUpdate.data.append(movingAvg)
         
         if dataToUpdate.data.count > 50 {
@@ -224,6 +298,7 @@ struct BoxBreathing: View {
             let maxY = yAxisDomain.upperBound
             yAxisDomain = minY - 0.001...maxY // Adjust for padding
         }
+
     }
     
     private func calculateMovingAverage(data: [Float], windowSize: Int) -> Float {
@@ -241,6 +316,14 @@ struct BoxBreathing: View {
             dataToUpdate.data.removeFirst()
         }
         
+    }
+    
+    func speak(_ message: String) {
+        let speechUtterance = AVSpeechUtterance(string: message)
+        speechUtterance.rate = AVSpeechUtteranceDefaultSpeechRate
+        speechUtterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.speech.synthesis.voice.Fred")
+
+        speechSynthesizer.speak(speechUtterance)
     }
 }
 
