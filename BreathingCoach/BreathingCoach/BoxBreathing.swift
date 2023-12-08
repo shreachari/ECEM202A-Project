@@ -32,8 +32,8 @@ struct BoxBreathing: View {
     
     // update
     private var hold_threshold = 0.0025
-    private var inhale_slope = 0.0025
-    private var exhale_slope = -0.00015
+    private var inhale_slope = 0.0015//0.0025
+    private var exhale_slope = -0.0015//-0.00015
     private var slope_var_per = 0.75
 
     var body: some View {
@@ -192,7 +192,7 @@ struct BoxBreathing: View {
                     self.breathingCountdown = 4
                 }
                 
-                if totalTime < 0 {
+                if totalTime <= 0 {
                     timer.invalidate()
                 }
             }
@@ -210,7 +210,7 @@ struct BoxBreathing: View {
                 checkData(initial: Double(initial), final: Double(final), step: breathingVal)
             }
             
-            if totalTime < 0 {
+            if totalTime <= 0 {
                 timer.invalidate()
             }
         }
