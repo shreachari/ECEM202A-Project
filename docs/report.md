@@ -88,7 +88,7 @@ Some stretch goals are:
 
 # 2. Related Work
 
-### 9.a. Papers
+### Papers
 
 ### MindfulWatch: A Smartwatch-Based System For Real-Time Respiration Monitoring During Meditation
 * The research paper introduces MindfulWatch, a smartwatch-based sensing system designed for real-time monitoring of respiration during meditation. MindfulWatch utilizes motion sensors to detect subtle wrist rotations induced by respiration, enabling accurate measurement of breathing patterns without the need for training. The system offers essential biosignals, including the duration of inhalation and exhalation, which can be used as objective measures of meditation efficacy. It aims to provide real-time feedback to meditators, potentially enhancing the effectiveness of meditation practice.
@@ -97,11 +97,11 @@ Some stretch goals are:
 ### Non-contact diagnosis of obstructive sleep apnea using impulse-radio ultra-wideband radar
 * This research paper uses UWB technology to detect user respiration and help diagnose the sleep apnea medical condition.
 
-### 9.b. Datasets
+### Datasets
 
 Our project features real time data collected from the NESL lab's UWB sensor. We construct datasets as needed from this data.
 
-### 9.c. Software
+### Software
 
 * C/C++/Linux for Raspberry Pi
 * ZeroMQ for networking between Raspberry Pi and mobile device
@@ -133,8 +133,46 @@ Currently for proof of concept, only one exercise, 'Box Breathing,' has been imp
 We also implemented logic for checking breathing variation during hold steps. Deviations above thresholds trigger a vocal feedback to the user.
 
 # 4. Evaluation and Results
+Our initial goals have been met. We were able to create a visually appealing, reliable, and easy to use iOS app. Our app instructs users to first select a breathing exercise. The instructions of the exercise are then displayed and the exercise begins when the start button is clicked. We had initially wanted to display a creative visual to users. Our data quality is not good enough to do so well at this point due to factors such as varying distance values and additional inconsistencies.
+
+Our findings uncovered a few valuable discoveries.
+1. Difficulty checking error 
+	a. We could not simply implement fixed error thresholds due to inconsistencies in distance values measured from run to run
+	b. We checked slopes depending on phase but it was hard to gain much information from this data for reasons detailed in later sections of this report.
+2. Flipped graphs
+	a. Occasionally, the entire waveform is flipped, with inhales corresponding to decreasing values and exhales corresponding to increasing values.
+	b. One possible solution is to detect this issue in a calibration period and invert data
+	c. The difficulty in solving this issue is discerning between flipped graphs and incorrect breathing by the user
+	d. Furthermore, we need to determine what the axis of reflection is as it changes every time
+3. Distance and orientation must be perfect
+	a. If the user is not in the perfect position, the data we see is wildly inaccurate
+	b. There is no clear solution to this issue
+	c. Solving this will require sending large amounts of data in real time and performing analysis in real time to determine the user's actual distance 
+
 
 # 5. Discussion and Conclusions
+
+Overall, we have proven that UWB sensing can be used to detect and analyze breathing, but it is not perfect. 
+
+There are several avenues for improvement, which are as follows:
+
+Enhancements:
+1. Normalize data from 0 to 1
+	a. This avoids the issue of dynamic ranges, which are currently implemented
+	b. This also can allow us to display attractive breathing visuals
+2. Determine user’s distance in real time
+	a. We can use video as well to determine this. It could be possible to determine the user's distance using the video measurement feature of the iPhone.
+3. Implement better error checking
+	a. We can use ML to better understand user’s breathing and provide appropriate feedback
+4. We can add support for more breathing exercises
+
+Things to test and analyze in further research:
+1. Networking: web sockets vs zmq
+	a. If the enhancements mentioned above are implemented, we will need to send larger amounts of data over in real time. At this point, the networking might matter.
+2. Try different types of smoothing
+	a. One example of a smoothing method we can try is the Savitzky Golay filter
+	b. More research will need to be done on additional types of smoothing and the effects they may have.
+
 
 # 6. References
 * [MindfulWatch](https://dl.acm.org/doi/10.1145/3130922#:~:text=Operating%20solely%20on%20a%20smartwatch,%2Fs%20induced%20by%20respiration.)
