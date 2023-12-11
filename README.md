@@ -17,7 +17,7 @@ BreathingCoach folder has code for the swift iOS mobile app the user will use. U
 
 ## Setup Details
 
-1. The current proof of concept setup requires both Raspberry Pi and you mac to be connected to NESL_150 WiFi.
+1. The current proof of concept setup requires both Raspberry Pi and your mac to be connected to NESL_150 WiFi.
 2. Run the program Runme in the Raspberry Pi machine.
 3. Place the sensor connected to Raspberry Pi at a short distance aligned to your chest.  
 4. Make sure Xcode is installed on your mac. Run the app in BreathingCoach folder using below steps.
