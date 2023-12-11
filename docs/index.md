@@ -18,5 +18,5 @@ This project is in collaboration with the NESL Lab and Ph.D. Candidate Ziqi Wang
 
 * [Proposal](proposal.md)
 * [Midterm Checkpoint Presentation Slides](https://docs.google.com/presentation/d/1XQ8uPuueGzXhl0n6wjq7vTuQ-oaQPv-rD38c7HlSZoE/edit?usp=sharing)
-* [Final Presentation Slides](http://)
+* [Final Presentation Slides](https://docs.google.com/presentation/d/1S6q00YL6q-XFINqj3w1EVzUUMkx1ZfxuIfV7gTX2lgg/edit?usp=sharing)
 * [Final Report](report.md)

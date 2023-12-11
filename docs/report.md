@@ -30,7 +30,7 @@ Our objective is to build a iOS app that serves as proof of concept that wireles
 
 Breathing can be measured today using several approaches that all feature sensors that are physically attached to a user's body. One such approach is band that attaches around a users' chest and measures the vibrations in and around the chest. Another approach, [RESPA](https://www.zansors.com/respa), features a small clip on device that connects to an iOS or Android app to provide breathing data. This wearable sensor provides real time haptic feedback as well. Additionally, MindfulWatch is a smartwatch-based sensing system designed for real time monitoring of respiration during meditation by capturing subtle wrist movements. The limitations of these approaches are the reliance on wearable devices, that can constrict the user's motion or be uncomfortable to wear, or no feedback.
 
-There are also wireless techniques currently that are useful for capturing physiological signals similar to what we propose in this project. As an example, the technology 'EQ-Radio' uses Frequency Modulated Carrier Wave (FMCW) for emotion sensing by extracting heartbeats and respiration from RF signals reflected off the human body. In another case, UWB signals for non contact diagnosis of sleep apnea by detecting respiratory events. So, there are currently wireless technologies to sense physiological features for the purposes of smart cities, medical diagnosis, and more. However, wireless technologies have not been explored for exercising, meditation, or general wellness.
+There are also wireless techniques currently that are useful for capturing physiological signals similar to what we propose in this project. As an example, the technology 'EQ-Radio' uses Frequency Modulated Carrier Wave (FMCW) for emotion sensing by extracting heartbeats and respiration from RF signals reflected off the human body. In another case, UWB signals are used for non contact diagnosis of sleep apnea by detecting respiratory events. So, there are currently wireless technologies to sense physiological features for the purposes of smart cities, medical diagnosis, and more. However, wireless technologies have not been explored for exercising, meditation, or general wellness.
 
 
 ## 3. Novelty & Rationale
@@ -95,7 +95,7 @@ Some stretch goals are:
 ### EQ-Radio: Emotion Recognition Using Wireless Signals
 * The research paper introduces a technique to recognize emotion using RF signals reflected off of human body. These signals are processed to extract respiration and individual heartbeats of a user. The this information is fed into an SVM classifier that predicts emotion.
 ### Non-contact diagnosis of obstructive sleep apnea using impulse-radio ultra-wideband radar
-* This research paper ises UWB technology to detect user respiration and help diagnose the sleep apnea medical condition.
+* This research paper uses UWB technology to detect user respiration and help diagnose the sleep apnea medical condition.
 
 ### 9.b. Datasets
 
@@ -122,7 +122,7 @@ Initial sensor data analysis was done in Matlab. Sensor collects frames of data 
 (determined by distance of user chest from sensor) informs actual user breathing. We currently hardcode distance of user from sensor. Using frame index (bin) prediction we only send that particular value per frame over to iOS app.
 
 ### Data Transfer Methodology
-This requires both Pi and device to be connected to same WiFi. We use the ZeroMQ messaging system because it is lightweight, easy to use, and fast. We use a publisher-subscriber model in this software. The publisher was set up in the Pi code (socket binding to a tcp port) and the subscriber was set up in the app (socket connecting to the tcp port). The subscriber listens to breathing data published by publisher.
+This requires both Pi and device to be connected to same WiFi. We use the ZeroMQ messaging system because it is lightweight, easy to use, and fast. We use a publisher-subscriber model in this software. The publisher was set up in the Pi code (socket binding to a tcp port) and the subscriber was set up in the app (socket connecting to the tcp port). The subscriber listens to breathing data published by publisher. This data is then used to graphically show the user his/her breathing.
 
 ### Breathing Exercise Implemented
 Currently for proof of concept, only one exercise, 'Box Breathing,' has been implemented. The steps in this exercise are inhale, hold, exhale, hold, and repeat.
