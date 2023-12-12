@@ -137,17 +137,17 @@ Our initial goals have been met. We were able to create a visually appealing, re
 
 Our findings uncovered a few valuable discoveries.
 1. Difficulty checking error 
-	a. We could not simply implement fixed error thresholds due to inconsistencies in distance values measured from run to run
-	b. We checked slopes depending on phase but it was hard to gain much information from this data for reasons detailed in later sections of this report.
+	* We could not simply implement fixed error thresholds due to inconsistencies in distance values measured from run to run
+	* We checked slopes depending on phase but it was hard to gain much information from this data for reasons detailed in later sections of this report.
 2. Flipped graphs
-	a. Occasionally, the entire waveform is flipped, with inhales corresponding to decreasing values and exhales corresponding to increasing values.
-	b. One possible solution is to detect this issue in a calibration period and invert data
-	c. The difficulty in solving this issue is discerning between flipped graphs and incorrect breathing by the user
-	d. Furthermore, we need to determine what the axis of reflection is as it changes every time
+	* Occasionally, the entire waveform is flipped, with inhales corresponding to decreasing values and exhales corresponding to increasing values.
+	* One possible solution is to detect this issue in a calibration period and invert data
+	* The difficulty in solving this issue is discerning between flipped graphs and incorrect breathing by the user
+	* Furthermore, we need to determine what the axis of reflection is as it changes every time
 3. Distance and orientation must be perfect
-	a. If the user is not in the perfect position, the data we see is wildly inaccurate
-	b. There is no clear solution to this issue
-	c. Solving this will require sending large amounts of data in real time and performing analysis in real time to determine the user's actual distance 
+	* If the user is not in the perfect position, the data we see is wildly inaccurate
+	* There is no clear solution to this issue
+	* Solving this will require sending large amounts of data in real time and performing analysis in real time to determine the user's actual distance 
 
 
 # 5. Discussion and Conclusions
@@ -158,20 +158,20 @@ There are several avenues for improvement, which are as follows:
 
 Enhancements:
 1. Normalize data from 0 to 1
-	a. This avoids the issue of dynamic ranges, which are currently implemented
-	b. This also can allow us to display attractive breathing visuals
+	* This avoids the issue of dynamic ranges, which are currently implemented
+	* This also can allow us to display attractive breathing visuals
 2. Determine user’s distance in real time
-	a. We can use video as well to determine this. It could be possible to determine the user's distance using the video measurement feature of the iPhone.
+	* We can use video as well to determine this. It could be possible to determine the user's distance using the video measurement feature of the iPhone.
 3. Implement better error checking
-	a. We can use ML to better understand user’s breathing and provide appropriate feedback
+	* We can use ML to better understand user’s breathing and provide appropriate feedback
 4. We can add support for more breathing exercises
 
 Things to test and analyze in further research:
 1. Networking: web sockets vs zmq
-	a. If the enhancements mentioned above are implemented, we will need to send larger amounts of data over in real time. At this point, the networking might matter.
+	* If the enhancements mentioned above are implemented, we will need to send larger amounts of data over in real time. At this point, the networking might matter.
 2. Try different types of smoothing
-	a. One example of a smoothing method we can try is the Savitzky Golay filter
-	b. More research will need to be done on additional types of smoothing and the effects they may have.
+	* One example of a smoothing method we can try is the Savitzky Golay filter
+	* More research will need to be done on additional types of smoothing and the effects they may have.
 
 
 # 6. References
