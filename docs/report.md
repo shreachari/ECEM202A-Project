@@ -135,6 +135,8 @@ We also implemented logic for checking breathing variation during hold steps. De
 # 4. Evaluation and Results
 Our initial goals have been met. We were able to create a visually appealing, reliable, and easy to use iOS app. Our app instructs users to first select a breathing exercise. The instructions of the exercise are then displayed and the exercise begins when the start button is clicked. We had initially wanted to display a creative visual to users. Our data quality is not good enough to do so well at this point due to factors such as varying distance values and additional inconsistencies.
 
+[Click for project demo!](https://drive.google.com/file/d/1fsAcDwBx2zYR1A-EnIn8oun2aPz6hsLw/view?usp=sharing)
+
 Perfect data can be seen as follows.
 ![Perfect Inhale](Images/perfect_inhale.png)
 ![Perfect Hold](Images/perfect_hold.png)
