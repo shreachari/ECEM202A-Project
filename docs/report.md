@@ -135,7 +135,14 @@ We also implemented logic for checking breathing variation during hold steps. De
 # 4. Evaluation and Results
 Our initial goals have been met. We were able to create a visually appealing, reliable, and easy to use iOS app. Our app instructs users to first select a breathing exercise. The instructions of the exercise are then displayed and the exercise begins when the start button is clicked. We had initially wanted to display a creative visual to users. Our data quality is not good enough to do so well at this point due to factors such as varying distance values and additional inconsistencies.
 
-Our findings uncovered a few valuable discoveries.
+[Click for project demo!](https://drive.google.com/file/d/1fsAcDwBx2zYR1A-EnIn8oun2aPz6hsLw/view?usp=sharing)
+
+Perfect data can be seen as follows.
+![Perfect Inhale](Images/perfect_inhale.png)
+![Perfect Hold](Images/perfect_hold.png)
+![Perfect Exhale](Images/perfect_exhale.png)
+
+Our findings uncovered a few valuable discoveries. Images are attached for reference
 1. Difficulty checking error 
 	* We could not simply implement fixed error thresholds due to inconsistencies in distance values measured from run to run
 	* We checked slopes depending on phase but it was hard to gain much information from this data for reasons detailed in later sections of this report.
@@ -144,15 +151,18 @@ Our findings uncovered a few valuable discoveries.
 	* One possible solution is to detect this issue in a calibration period and invert data
 	* The difficulty in solving this issue is discerning between flipped graphs and incorrect breathing by the user
 	* Furthermore, we need to determine what the axis of reflection is as it changes every time
+	* ![Flipped One](Images/flipped_one.png)
+	* ![Flipped Two](Images/flipped_two.png)
 3. Distance and orientation must be perfect
 	* If the user is not in the perfect position, the data we see is wildly inaccurate
 	* There is no clear solution to this issue
 	* Solving this will require sending large amounts of data in real time and performing analysis in real time to determine the user's actual distance 
+	* ![Bad Data](Images/bad_data.png)
 
 
 # 5. Discussion and Conclusions
 
-Overall, we have proven that UWB sensing can be used to detect and analyze breathing, but it is not perfect. 
+Overall, we have proven that UWB sensing can be used to detect and analyze breathing. We were able to create a user-friendly, reliable, and easy to use app. We also implemented real time feedback, both visually and vocally, which works as expected. There are some issues with the sensor, which are detailed throughout the report. Some examples of perfect breathing can be seen below.
 
 There are several avenues for improvement, which are as follows:
 
@@ -170,6 +180,8 @@ Things to test and analyze in further research:
 1. Networking: web sockets vs zmq
 	* If the enhancements mentioned above are implemented, we will need to send larger amounts of data over in real time. At this point, the networking might matter.
 2. Try different types of smoothing
+	* Non smoothed data can provide more information about the force of the inhale/exhale as shown below
+	* ![Sharp Breathing](Images/sharp_breathing.png)
 	* One example of a smoothing method we can try is the Savitzky Golay filter
 	* More research will need to be done on additional types of smoothing and the effects they may have.
 
