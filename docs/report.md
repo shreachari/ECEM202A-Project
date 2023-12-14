@@ -155,8 +155,10 @@ Our findings uncovered a few valuable discoveries. Images are attached for refer
 	* One possible solution is to detect this issue in a calibration period and invert data
 	* The difficulty in solving this issue is discerning between flipped graphs and incorrect breathing by the user
 	* Furthermore, we need to determine what the axis of reflection is as it changes every time
-	* ![Flipped One](Images/flipped_one.png)
-	* ![Flipped Two](Images/flipped_two.png)
+	<div style="display: flex; justify-content: space-between;">
+	    <img src="Images/flipped_one.png" alt="Image" width="200" height="400"/>
+	    <img src="Images/flipped_two.png" alt="Image" width="200" height="400"/>
+	</div>
 3. Distance and orientation must be perfect
 	* If the user is not in the perfect position, the data we see is wildly inaccurate
 	* There is no clear solution to this issue
