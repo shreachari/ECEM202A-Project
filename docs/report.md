@@ -185,10 +185,10 @@ Things to test and analyze in further research:
 1. Networking: web sockets vs zmq
 	* If the enhancements mentioned above are implemented, we will need to send larger amounts of data over in real time. At this point, the networking might matter.
 2. Try different types of smoothing
-	* Non smoothed data can provide more information about the force of the inhale/exhale as shown below
-	<img src="Images/sharp_breathing.png" alt="Image" width="200" height="400"/>
+	* Non smoothed data can provide more information about the force of the inhale/exhale as shown in the image below.
 	* One example of a smoothing method we can try is the Savitzky Golay filter
 	* More research will need to be done on additional types of smoothing and the effects they may have.
+	<img src="Images/sharp_breathing.png" alt="Image" width="200" height="400"/>
 
 
 # 6. References
