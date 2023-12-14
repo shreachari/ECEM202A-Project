@@ -138,10 +138,13 @@ Our initial goals have been met. We were able to create a visually appealing, re
 [Click for project demo!](https://drive.google.com/file/d/1fsAcDwBx2zYR1A-EnIn8oun2aPz6hsLw/view?usp=sharing)
 
 Perfect data can be seen as follows.
-<img src="Images/perfect_inhale.png" alt="Image" width="300" height="200"/>
 
-![Perfect Hold](Images/perfect_hold.png)
-![Perfect Exhale](Images/perfect_exhale.png)
+<div style="display: flex; justify-content: space-between;">
+    <img src="Images/perfect_inhale.png" alt="Image" width="200" height="400"/>
+    <img src="Images/perfect_hold.png" alt="Image" width="200" height="400"/>
+    <img src="Images/perfect_exhale.png" alt="Image" width="200" height="400"/>
+</div>
+
 
 Our findings uncovered a few valuable discoveries. Images are attached for reference
 1. Difficulty checking error 
