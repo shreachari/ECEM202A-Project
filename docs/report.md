@@ -162,9 +162,8 @@ Our findings uncovered a few valuable discoveries. Images are attached for refer
 3. Distance and orientation must be perfect
 	* If the user is not in the perfect position, the data we see is wildly inaccurate
 	* There is no clear solution to this issue
-	* Solving this will require sending large amounts of data in real time and performing analysis in real time to determine the user's actual distance 
-	* ![Bad Data](Images/bad_data.png)
-
+	* Solving this will require sending large amounts of data in real time and performing analysis in real time to determine the user's actual distance
+	<img src="Images/bad_data.png" alt="Image" width="200" height="400"/>
 
 # 5. Discussion and Conclusions
 
@@ -187,7 +186,7 @@ Things to test and analyze in further research:
 	* If the enhancements mentioned above are implemented, we will need to send larger amounts of data over in real time. At this point, the networking might matter.
 2. Try different types of smoothing
 	* Non smoothed data can provide more information about the force of the inhale/exhale as shown below
-	* ![Sharp Breathing](Images/sharp_breathing.png)
+	<img src="Images/sharp_breathing.png" alt="Image" width="200" height="400"/>
 	* One example of a smoothing method we can try is the Savitzky Golay filter
 	* More research will need to be done on additional types of smoothing and the effects they may have.
 
