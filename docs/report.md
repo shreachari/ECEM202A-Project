@@ -138,9 +138,13 @@ Our initial goals have been met. We were able to create a visually appealing, re
 [Click for project demo!](https://drive.google.com/file/d/1fsAcDwBx2zYR1A-EnIn8oun2aPz6hsLw/view?usp=sharing)
 
 Perfect data can be seen as follows.
-![Perfect Inhale](Images/perfect_inhale.png)
-![Perfect Hold](Images/perfect_hold.png)
-![Perfect Exhale](Images/perfect_exhale.png)
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="Images/perfect_inhale.png" alt="Image" width="200" height="400"/>
+    <img src="Images/perfect_hold.png" alt="Image" width="200" height="400"/>
+    <img src="Images/perfect_exhale.png" alt="Image" width="200" height="400"/>
+</div>
+
 
 Our findings uncovered a few valuable discoveries. Images are attached for reference
 1. Difficulty checking error 
@@ -151,14 +155,15 @@ Our findings uncovered a few valuable discoveries. Images are attached for refer
 	* One possible solution is to detect this issue in a calibration period and invert data
 	* The difficulty in solving this issue is discerning between flipped graphs and incorrect breathing by the user
 	* Furthermore, we need to determine what the axis of reflection is as it changes every time
-	* ![Flipped One](Images/flipped_one.png)
-	* ![Flipped Two](Images/flipped_two.png)
+	<div style="display: flex; justify-content: space-between;">
+	    <img src="Images/flipped_one.png" alt="Image" width="200" height="400"/>
+	    <img src="Images/flipped_two.png" alt="Image" width="200" height="400"/>
+	</div>
 3. Distance and orientation must be perfect
 	* If the user is not in the perfect position, the data we see is wildly inaccurate
 	* There is no clear solution to this issue
-	* Solving this will require sending large amounts of data in real time and performing analysis in real time to determine the user's actual distance 
-	* ![Bad Data](Images/bad_data.png)
-
+	* Solving this will require sending large amounts of data in real time and performing analysis in real time to determine the user's actual distance
+	<img src="Images/bad_data.png" alt="Image" width="200" height="400"/>
 
 # 5. Discussion and Conclusions
 
@@ -180,10 +185,10 @@ Things to test and analyze in further research:
 1. Networking: web sockets vs zmq
 	* If the enhancements mentioned above are implemented, we will need to send larger amounts of data over in real time. At this point, the networking might matter.
 2. Try different types of smoothing
-	* Non smoothed data can provide more information about the force of the inhale/exhale as shown below
-	* ![Sharp Breathing](Images/sharp_breathing.png)
+	* Non smoothed data can provide more information about the force of the inhale/exhale as shown in the image below.
 	* One example of a smoothing method we can try is the Savitzky Golay filter
 	* More research will need to be done on additional types of smoothing and the effects they may have.
+	<img src="Images/sharp_breathing.png" alt="Image" width="200" height="400"/>
 
 
 # 6. References
