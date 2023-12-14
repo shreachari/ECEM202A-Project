@@ -138,7 +138,8 @@ Our initial goals have been met. We were able to create a visually appealing, re
 [Click for project demo!](https://drive.google.com/file/d/1fsAcDwBx2zYR1A-EnIn8oun2aPz6hsLw/view?usp=sharing)
 
 Perfect data can be seen as follows.
-![Perfect Inhale](Images/perfect_inhale.png)
+<img src="Images/perfect_inhale.png" alt="Image" width="300" height="200"/>
+
 ![Perfect Hold](Images/perfect_hold.png)
 ![Perfect Exhale](Images/perfect_exhale.png)
 
